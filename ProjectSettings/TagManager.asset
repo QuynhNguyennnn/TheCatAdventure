@@ -41,3 +41,15 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Ground
+    uniqueID: 3042973305
+    locked: 0
+  - name: Pathway
+    uniqueID: 2565895003
+    locked: 0
+  - name: SolidObject
+    uniqueID: 245831253
+    locked: 0
+  - name: New Layer 4
+    uniqueID: 1505669867
+    locked: 0
