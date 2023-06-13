@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - AttackRange
+  - Enemy
+  - Leafstep
   layers:
   - Default
   - TransparentFX
@@ -42,6 +44,13 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+<<<<<<< HEAD
+  - name: Background
+    uniqueID: 2002509443
+    locked: 0
+  - name: Player
+    uniqueID: 2946249499
+=======
   - name: Ground
     uniqueID: 3042973305
     locked: 0
@@ -57,9 +66,7 @@ TagManager:
   - name: SolidObjectMagicWord
     uniqueID: 3190803595
     locked: 0
-  - name: Player
-    uniqueID: 3388209909
-    locked: 0
   - name: New Layer 6
     uniqueID: 1686260093
+>>>>>>> origin/map3
     locked: 0

@@ -3,8 +3,7 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags:
-  - AttackRange
+  tags: []
   layers:
   - Default
   - TransparentFX
@@ -56,9 +55,6 @@ TagManager:
     locked: 0
   - name: SolidObjectMagicWord
     uniqueID: 3190803595
-    locked: 0
-  - name: Player
-    uniqueID: 3388209909
     locked: 0
   - name: New Layer 6
     uniqueID: 1686260093
