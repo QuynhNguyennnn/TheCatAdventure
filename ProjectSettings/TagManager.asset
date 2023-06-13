@@ -3,7 +3,13 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - AttackRange
+  - Enemy
+  - GoOut1
+  - GoIn1
+  - GoIn2
+  - GoOut2
   layers:
   - Default
   - TransparentFX
