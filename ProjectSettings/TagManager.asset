@@ -5,6 +5,11 @@ TagManager:
   serializedVersion: 2
   tags:
   - AttackRange
+  - Enemy
+  - GoOut1
+  - GoIn1
+  - GoIn2
+  - GoOut2
   layers:
   - Default
   - TransparentFX
@@ -41,25 +46,4 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
-    locked: 0
-  - name: Ground
-    uniqueID: 3042973305
-    locked: 0
-  - name: Pathway
-    uniqueID: 2565895003
-    locked: 0
-  - name: PathwayMagicWord
-    uniqueID: 1505669867
-    locked: 0
-  - name: SolidObject
-    uniqueID: 245831253
-    locked: 0
-  - name: SolidObjectMagicWord
-    uniqueID: 3190803595
-    locked: 0
-  - name: Player
-    uniqueID: 3388209909
-    locked: 0
-  - name: New Layer 6
-    uniqueID: 1686260093
     locked: 0

@@ -243,7 +243,7 @@ TilemapRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 2002509443
-  m_SortingLayer: 1
+  m_SortingLayer: 0
   m_SortingOrder: 2
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
@@ -8698,6 +8698,7 @@ GameObject:
   - component: {fileID: 363291860}
   - component: {fileID: 363291859}
   - component: {fileID: 363291858}
+  - component: {fileID: 363291861}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -8771,6 +8772,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &363291861
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 363291857}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b24d873f03d43164f90bb16d276f6821, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 520640725}
+  smoothing: 0.5
+--- !u!4 &520640725 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 9012819855095474429, guid: 4d0b796cfaf04c64e8f6af225dd737ea, type: 3}
+  m_PrefabInstance: {fileID: 1178794619}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1084661466
 GameObject:
   m_ObjectHideFlags: 0
@@ -8843,7 +8863,7 @@ TilemapRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 2002509443
-  m_SortingLayer: 1
+  m_SortingLayer: 0
   m_SortingOrder: 1
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
@@ -17510,11 +17530,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5567465332260126392, guid: 4d0b796cfaf04c64e8f6af225dd737ea, type: 3}
       propertyPath: m_SortingLayer
-      value: 2
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 5567465332260126392, guid: 4d0b796cfaf04c64e8f6af225dd737ea, type: 3}
       propertyPath: m_SortingLayerID
-      value: -1348717797
+      value: -906757387
       objectReference: {fileID: 0}
     - target: {fileID: 9012819855095474429, guid: 4d0b796cfaf04c64e8f6af225dd737ea, type: 3}
       propertyPath: m_RootOrder
@@ -17634,7 +17654,7 @@ TilemapRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 2002509443
-  m_SortingLayer: 1
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
