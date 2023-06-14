@@ -1,11 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Attack1 : MonoBehaviour
 {
     PlayerController player;
     public int damageToGive = 2;
+
     // Start is called before the first frame update
     void Start()
     {
