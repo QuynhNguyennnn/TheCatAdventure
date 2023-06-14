@@ -7,14 +7,20 @@ public class ShowG_FirstMeet : MonoBehaviour
 {
     UIManager manager;
     public GameObject cat;
+    CatMove catMove;
+    WizardController wController;
     string[] conversation;
     int count = 0;
+    Boolean firstTouch = true;
     Boolean isTouch;
     // Start is called before the first frame update
     void Start()
     {
         isTouch = false;
         manager = FindObjectOfType<UIManager>();
+        catMove = cat.GetComponent<CatMove>();
+        wController = FindObjectOfType<WizardController>();
+        Debug.Log(catMove);
         conversation = new string[7];
         conversation[0] = "Elric (joy): Welcome to the home of the Hero, you have come at the right time. Summer the cat and the power of the \"cat collar\" are waiting for us.";
         conversation[1] = "Player (interested): Cat collar? I heard about it through legend. But no one knows where it is.";
@@ -27,21 +33,30 @@ public class ShowG_FirstMeet : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space)) {
+        if (Input.GetKeyDown(KeyCode.Space) && isTouch) {
             count++;
             if(count == 5) {
                 cat.SetActive(true);
+                catMove.SetPos(0);
                 isTouch = false;
             }
         }
 
-        if (isTouch)
+        if (isTouch && firstTouch)
         {
             manager.ShowGuild(conversation[count]);
         }
         else
         {
             manager.OffGuild();
+        }
+
+        if (count == 6)
+        {
+            manager.OffGuild();
+            catMove.SetPos(1);
+            wController.SetPos(0);
+            firstTouch = false;
         }
     }
 
@@ -63,5 +78,6 @@ public class ShowG_FirstMeet : MonoBehaviour
     public void toggleTouch()
     {
         isTouch = !isTouch;
+        count = 5;
     }
 }
