@@ -42,8 +42,6 @@ public class EnemyController : MonoBehaviour
     public void FollowPlayer()
     {
         myAnim.SetBool("isMoving", true);
-        myAnim.SetFloat("moveX", (target.position.x - transform.position.x));
-        myAnim.SetFloat("moveY", (target.position.y - transform.position.y));
 
         if(target.position.x - transform.position.x > 0 && m_FacingRight == true)
         {
