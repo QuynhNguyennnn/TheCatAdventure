@@ -13,6 +13,7 @@ public class ShowG_FirstMeet : MonoBehaviour
     int count = 0;
     Boolean firstTouch = true;
     Boolean isTouch;
+    public GameObject telegate;
     // Start is called before the first frame update
     void Start()
     {
@@ -57,6 +58,8 @@ public class ShowG_FirstMeet : MonoBehaviour
             catMove.SetPos(1);
             wController.SetPos(0);
             firstTouch = false;
+            telegate.SetActive(true);
+            gameObject.SetActive(false);
         }
     }
 

@@ -38,6 +38,11 @@ public class CatMove : MonoBehaviour
         {
             MoveTo(homePosition2);
         }
+
+        if (transform.position == homePosition2.transform.position)
+        {
+            Destroy(gameObject);
+        }
     }
 
     public void MoveTo(GameObject homePosition)
