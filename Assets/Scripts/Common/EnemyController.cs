@@ -63,13 +63,14 @@ public class EnemyController : MonoBehaviour
         Vector3 theScale = transform.localScale;
         //theScale.x *= -1;
         theScale.x *= 1;
+
         transform.localScale = theScale;
     }
 
     public void GoHome()
     {
-        myAnim.SetFloat("moveX", (target.position.x - transform.position.x));
-        myAnim.SetFloat("moveY", (target.position.y - transform.position.y));
+        myAnim.SetFloat("moveX", (homePosition.position.x - transform.position.x));
+        myAnim.SetFloat("moveY", (homePosition.position.y - transform.position.y));
 
         if (transform.position.x - homePosition.position.x > 0 && m_FacingRight == false)
         {
