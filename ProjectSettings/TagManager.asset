@@ -6,6 +6,10 @@ TagManager:
   tags:
   - AttackRange
   - Enemy
+  - GoOut1
+  - GoIn1
+  - GoIn2
+  - GoOut2
   layers:
   - Default
   - TransparentFX
@@ -44,8 +48,8 @@ TagManager:
     uniqueID: 0
     locked: 0
   - name: Background
-    uniqueID: 937265261
+    uniqueID: 1575131389
     locked: 0
   - name: Player
-    uniqueID: 4151308475
+    uniqueID: 1140738745
     locked: 0

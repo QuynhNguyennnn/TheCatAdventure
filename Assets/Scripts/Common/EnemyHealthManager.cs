@@ -6,6 +6,7 @@ public class EnemyHealthManager : MonoBehaviour
 {
     public int currentHealth;
     public int maxHealth;
+    EnemyController controller;
 
     private bool flashActive;
     [SerializeField]
@@ -16,6 +17,7 @@ public class EnemyHealthManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        controller = GetComponent<EnemyController>();
         enemySprite = GetComponent<SpriteRenderer>();
     }
 
@@ -70,6 +72,7 @@ public class EnemyHealthManager : MonoBehaviour
 
         currentHealth -= damageToGive;
         if (currentHealth <= 0) {
+            controller.isDie();
             Destroy(gameObject);
         }
     }

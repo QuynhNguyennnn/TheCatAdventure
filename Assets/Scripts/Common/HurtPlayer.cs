@@ -47,7 +47,6 @@ public class HurtPlayer : MonoBehaviour
         {
             if (collision.gameObject.GetComponent<HealthManager>().currentHealth > 0)
             {
-
                 // Destroy(collision.gameObject);
                 // collision.gameObject.SetActive(false);
                 collision.gameObject.GetComponent<HealthManager>().HurtPlayer(damageToGive);

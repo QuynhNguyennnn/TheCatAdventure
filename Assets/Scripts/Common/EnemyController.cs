@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.InteropServices.WindowsRuntime;
 using UnityEngine;
 
 public class EnemyController : MonoBehaviour
@@ -8,7 +9,7 @@ public class EnemyController : MonoBehaviour
     private Animator myAnim;
     private Transform target;
     private Boolean m_FacingRight = false;
-    public Transform homePosition;
+    public GameObject homePosition;
     PlayerController player;
 
     [SerializeField]
@@ -42,8 +43,6 @@ public class EnemyController : MonoBehaviour
     public void FollowPlayer()
     {
         myAnim.SetBool("isMoving", true);
-        myAnim.SetFloat("moveX", (target.position.x - transform.position.x));
-        myAnim.SetFloat("moveY", (target.position.y - transform.position.y));
 
         if(target.position.x - transform.position.x > 0 && m_FacingRight == true)
         {
@@ -61,28 +60,23 @@ public class EnemyController : MonoBehaviour
         m_FacingRight = !m_FacingRight;
         // Multiply the player's x local scale by -1.
         Vector3 theScale = transform.localScale;
-        //theScale.x *= -1;
-        theScale.x *= 1;
-
+        theScale.x *= -1;
         transform.localScale = theScale;
     }
 
     public void GoHome()
     {
-        myAnim.SetFloat("moveX", (homePosition.position.x - transform.position.x));
-        myAnim.SetFloat("moveY", (homePosition.position.y - transform.position.y));
-
-        if (transform.position.x - homePosition.position.x > 0 && m_FacingRight == false)
+        if (transform.position.x - homePosition.transform.position.x > 0 && m_FacingRight == false)
         {
             Flip();
         }
-        else if (transform.position.x - homePosition.position.x < 0 && m_FacingRight == true)
+        else if (transform.position.x - homePosition.transform.position.x < 0 && m_FacingRight == true)
         {
             Flip();
         }
-        transform.position = Vector3.MoveTowards(transform.position, homePosition.position, speed * Time.deltaTime);
+        transform.position = Vector3.MoveTowards(transform.position, homePosition.transform.position, speed * Time.deltaTime);
 
-        if (Vector3.Distance(transform.position, homePosition.position) == 0)
+        if (Vector3.Distance(transform.position, homePosition.transform.position) == 0)
             myAnim.SetBool("isMoving", false);
     }
 
@@ -93,5 +87,15 @@ public class EnemyController : MonoBehaviour
             Vector2 difference = transform.position - collision.transform.position;
             transform.position = new Vector2(transform.position.x + difference.x, transform.position.y + difference.y);
         }
+    }
+
+    public void SetHomePosition(GameObject HomePosition)
+    {
+        homePosition = HomePosition;
+    }
+
+    public void isDie()
+    {
+        Destroy(homePosition);
     }
 }
