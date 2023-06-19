@@ -39,9 +39,6 @@ public class BossZone : MonoBehaviour
 
             Destroy(gameObject);
         }
-
-        
-        Debug.Log(isMove);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
