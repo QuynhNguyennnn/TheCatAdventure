@@ -1,0 +1,2137 @@
+fileFormatVersion: 2
+guid: b4bf267db0a749a4ea033bb272f1aa4f
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: neckkle-removebg-preview_0
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 330
+        width: 211
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d4a1eae9778f1e4ba99bd402d751430
+      internalID: -1146481470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neckkle-removebg-preview_1
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 294
+        width: 37
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a3ae2dba0cb28e49948c9b976b346de
+      internalID: 1554359960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neckkle-removebg-preview_2
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 334
+        width: 35
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86e6971c9a90bc140be20a8e308fe756
+      internalID: 546681914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neckkle-removebg-preview_3
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 332
+        width: 35
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db03cda8fb1fe53409cd14a71dc65f25
+      internalID: -2044964297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neckkle-removebg-preview_4
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 331
+        width: 35
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bda18a441785c343815009dd2fab412
+      internalID: -890989574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neckkle-removebg-preview_5
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 330
+        width: 37
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7da1f0c9f7cf0a54ebffd8a1e4ac0875
+      internalID: 488894268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neckkle-removebg-preview_6
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 329
+        width: 33
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 320ae97e2ddba9f488132b7be7369c2e
+      internalID: -981546181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neckkle-removebg-preview_7
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 328
+        width: 32
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7908a02e24887d649b98aa096ebfc622
+      internalID: 965100442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neckkle-removebg-preview_8
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 335
+        width: 31
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c80f33ea6428c38499b73fb5313046f6
+      internalID: 1198619932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neckkle-removebg-preview_9
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 325
+        width: 40
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa5a6b2a605dbfd468afb17030d878b0
+      internalID: 275694505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neckkle-removebg-preview_10
+      rect:
+        serializedVersion: 2
+        x: 568
+        y: 325
+        width: 38
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50c166bc302d31e47ae5a8755f8c09df
+      internalID: 536925228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neckkle-removebg-preview_11
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 298
+        width: 32
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9588bd4497baca74a929acf321f7f0d6
+      internalID: -1249326644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neckkle-removebg-preview_12
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 292
+        width: 31
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39d2375765776a7459a86ccc4adfef14
+      internalID: -313279108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neckkle-removebg-preview_13
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 291
+        width: 39
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec5442dc39d184148a17527a9e1ef9ed
+      internalID: 2063842460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neckkle-removebg-preview_14
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 291
+        width: 38
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5d10b3141c6bea47bf71df43837abd6
+      internalID: -708709313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neckkle-removebg-preview_15
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 290
+        width: 39
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 005524f712d8a3343ab2984aa1886c8c
+      internalID: 410896428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neckkle-removebg-preview_16
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 288
+        width: 39
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aefbe791f4e41e949a9caef12c638746
+      internalID: 1359178658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neckkle-removebg-preview_17
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 288
+        width: 30
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e2f6f166a9107e4c990aebb66f10a5b
+      internalID: 502480652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neckkle-removebg-preview_18
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 284
+        width: 35
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a79771173d6a11499a5319d5c22a448
+      internalID: 1108686889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neckkle-removebg-preview_19
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 282
+        width: 32
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7e7e6417166e2a4b98de4dfb17b30c4
+      internalID: 1875596405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neckkle-removebg-preview_20
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 292
+        width: 30
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1e2287c9d69aff4bafb6266c61dcaff
+      internalID: 38505460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neckkle-removebg-preview_21
+      rect:
+        serializedVersion: 2
+        x: 522
+        y: 283
+        width: 43
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 231e9edf3a9f42d49baa17991062ae74
+      internalID: -1262369219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neckkle-removebg-preview_22
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 285
+        width: 32
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4d185033f7badd4d8b77f8c1e653157
+      internalID: 777330513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neckkle-removebg-preview_23
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 254
+        width: 30
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3857fbf03bb1feb4ea9179f63771e12a
+      internalID: -1741033135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neckkle-removebg-preview_24
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 253
+        width: 36
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e2ac97236720ee46a2c0784280b7608
+      internalID: 1970709128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neckkle-removebg-preview_25
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 249
+        width: 36
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6111e58f06704d341a84b6e1e2b9ecd3
+      internalID: -1579634507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neckkle-removebg-preview_26
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 251
+        width: 38
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e9b2b12fc3b6814899021a531ac0e1c
+      internalID: 1393549868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neckkle-removebg-preview_27
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 246
+        width: 81
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3dfa642944552154f8f8e13fa06e97df
+      internalID: 457119474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neckkle-removebg-preview_28
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 247
+        width: 40
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85b7af746efa2734b9696eb711ff57f2
+      internalID: -1309844120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neckkle-removebg-preview_29
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 257
+        width: 35
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9105413f073730418e7bf75304d2787
+      internalID: 1555254282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neckkle-removebg-preview_30
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 242
+        width: 33
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7dd9738f97bd3a845815b8c44bb47ad2
+      internalID: 863168151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neckkle-removebg-preview_31
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 198
+        width: 43
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49e455d88778e8a42af91b3138e8a88b
+      internalID: 1404534037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neckkle-removebg-preview_32
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 240
+        width: 32
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4450397a2115fac49a947005bbbe6e1e
+      internalID: -1784594720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neckkle-removebg-preview_33
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 250
+        width: 30
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e74eae9a3c30056469c5f84bec69f30f
+      internalID: 849829189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neckkle-removebg-preview_34
+      rect:
+        serializedVersion: 2
+        x: 523
+        y: 240
+        width: 38
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d18c0aac99b82be4a8ee74d3570693bb
+      internalID: -1479313129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neckkle-removebg-preview_35
+      rect:
+        serializedVersion: 2
+        x: 566
+        y: 242
+        width: 38
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfe2c475f6c1c5e43944342a31ddf003
+      internalID: 637454298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neckkle-removebg-preview_36
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 220
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2d0648a526d7c54d9ccbf069bdbf5a3
+      internalID: -8724402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neckkle-removebg-preview_37
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 207
+        width: 40
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a7c5e1aa46a3f94ca822153336dabf3
+      internalID: -145607656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neckkle-removebg-preview_38
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 209
+        width: 33
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da21a68d53c30284caa426c3f477b1b0
+      internalID: -1938787281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neckkle-removebg-preview_39
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 120
+        width: 44
+        height: 126
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae8e6b7ab99cfb6439440309309d53f1
+      internalID: 1459232957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neckkle-removebg-preview_40
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 204
+        width: 41
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6aa2ee7398c5e746b8796f22596d4ba
+      internalID: -1555488419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neckkle-removebg-preview_41
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 216
+        width: 35
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93d8504547c60ab4eb1288351a97e44c
+      internalID: -1982659674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neckkle-removebg-preview_42
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 207
+        width: 27
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7cf52c2de8ba5e4f9e5e8895cb47c67
+      internalID: 1573086650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neckkle-removebg-preview_43
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 203
+        width: 30
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bf4f08395b2bf54dadd0855b563ff18
+      internalID: -2078569281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neckkle-removebg-preview_44
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 157
+        width: 36
+        height: 83
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cfe7c93b63f6b24ba882573d21069df
+      internalID: -1143833832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neckkle-removebg-preview_45
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 200
+        width: 37
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eaebca8b311996c4aa3e0ec34b1d8fd6
+      internalID: -477136101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neckkle-removebg-preview_46
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 207
+        width: 31
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19036f09cd6e9dd48bceec5eaa4c044b
+      internalID: 828067227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neckkle-removebg-preview_47
+      rect:
+        serializedVersion: 2
+        x: 522
+        y: 197
+        width: 37
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f434787f14a04948959ec3d34eff8ce
+      internalID: 1577986994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neckkle-removebg-preview_48
+      rect:
+        serializedVersion: 2
+        x: 565
+        y: 194
+        width: 37
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1066a8f8d67d17646a1b907305a9c72a
+      internalID: 1877874526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neckkle-removebg-preview_49
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 171
+        width: 38
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 777363591cf5c294ab3928a5e52104a1
+      internalID: 45904198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neckkle-removebg-preview_50
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 171
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d449b5226c2de904da3a61713cf16b98
+      internalID: -805960267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neckkle-removebg-preview_51
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 79
+        width: 44
+        height: 125
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec93fc964a93b4545af36e7474379928
+      internalID: 720656132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neckkle-removebg-preview_52
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 119
+        width: 41
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 357c416dab7d31b498d2de3c16240724
+      internalID: -1000836287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neckkle-removebg-preview_53
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 118
+        width: 37
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28654364b534f8b4aa5164b6a102205c
+      internalID: 1002678305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neckkle-removebg-preview_54
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 117
+        width: 39
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c418df0f5d5bb44d9566cfae34dbc31
+      internalID: -832386611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neckkle-removebg-preview_55
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 115
+        width: 37
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c81fc0b07278438429bdd9e510fa61d5
+      internalID: -1765975672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neckkle-removebg-preview_56
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 156
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd4be711882f3b2439e3d18e810f3081
+      internalID: -919725888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neckkle-removebg-preview_57
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 154
+        width: 36
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 002fa6071f6501b43b184a1bd5863ac6
+      internalID: 1798741483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neckkle-removebg-preview_58
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 164
+        width: 30
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c858c48cfaf9854f9e99edf571a12da
+      internalID: 1245516872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neckkle-removebg-preview_59
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 155
+        width: 37
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfa52885709506a4fa87e5c5405060a0
+      internalID: 831871375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neckkle-removebg-preview_60
+      rect:
+        serializedVersion: 2
+        x: 563
+        y: 156
+        width: 38
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 400c7d0b2516cf34eb851e96e9927b85
+      internalID: -1434909234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neckkle-removebg-preview_61
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 127
+        width: 84
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5627cb771b64b774cad19784969ecd97
+      internalID: -103659483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neckkle-removebg-preview_62
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 125
+        width: 31
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30ec86317b69b1949913a1d7a28b7501
+      internalID: -651269601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neckkle-removebg-preview_63
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 113
+        width: 33
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f376a28c49b4b44781a99c630af3d2c
+      internalID: 160783365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neckkle-removebg-preview_64
+      rect:
+        serializedVersion: 2
+        x: 437
+        y: 112
+        width: 33
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b903a8b237ce2f49ba191ab9ee3821d
+      internalID: -1626058990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neckkle-removebg-preview_65
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 119
+        width: 31
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c812837ac24e5654881ea7f76d707417
+      internalID: -1876367794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neckkle-removebg-preview_66
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 112
+        width: 39
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90204a0111bd6f943af5c0c8ef08f4bb
+      internalID: -799432779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neckkle-removebg-preview_67
+      rect:
+        serializedVersion: 2
+        x: 562
+        y: 119
+        width: 39
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63b343a5e2154b14280d39d4877159a6
+      internalID: 2074096850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neckkle-removebg-preview_68
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 79
+        width: 41
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20daa9cbc244a2e4692a76b7af912534
+      internalID: -260039950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neckkle-removebg-preview_69
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 42
+        width: 40
+        height: 81
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4491438ca5eb71748be01479f02b4980
+      internalID: 1898185753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neckkle-removebg-preview_70
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 83
+        width: 38
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c31b927cb9786cf4582079c7d34c0276
+      internalID: -1238761749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neckkle-removebg-preview_71
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 79
+        width: 38
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fb52bfbb2528334597ea1b9dc4e0b82
+      internalID: -1356009016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neckkle-removebg-preview_72
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 78
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90e9e103e39e8a94a854068ed812fc47
+      internalID: -1100308084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neckkle-removebg-preview_73
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 79
+        width: 32
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 388cfc246b375ca4f88be3c4533cc81c
+      internalID: 1662301215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neckkle-removebg-preview_74
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 78
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 107b0a3b6c97456428e03c740051bb97
+      internalID: -1643251223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neckkle-removebg-preview_75
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 74
+        width: 33
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ca71a0ac110648469964f057c8e05b7
+      internalID: -21335726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neckkle-removebg-preview_76
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 73
+        width: 33
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08990db5397d55f41b0faa1c856bc747
+      internalID: 512405078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neckkle-removebg-preview_77
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 77
+        width: 34
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22a38676918cbd54a8752911e4329e36
+      internalID: -1505404121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neckkle-removebg-preview_78
+      rect:
+        serializedVersion: 2
+        x: 478
+        y: 79
+        width: 31
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82f472789b7c8904ca36d77723576d0b
+      internalID: -2125619665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neckkle-removebg-preview_79
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 70
+        width: 39
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d05e2df7b0dd17439382adb1782f17f
+      internalID: 1887775042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neckkle-removebg-preview_80
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 43
+        width: 32
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31e09c6a164b8b94a9945afd3422e6aa
+      internalID: -1389595913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neckkle-removebg-preview_81
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 41
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b70e69f3870159b4ea7de2b1e6e83e99
+      internalID: 1508533599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neckkle-removebg-preview_82
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 40
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e7d732a44a6683468f2636e383a31a4
+      internalID: 657331869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neckkle-removebg-preview_83
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 39
+        width: 30
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4e3ccc9b15e6d34091b42791c5fadd7
+      internalID: -679070258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neckkle-removebg-preview_84
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 38
+        width: 32
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a13c87765c97f4b4fad28943dc1a13a6
+      internalID: 854289529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neckkle-removebg-preview_85
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 39
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62eac7ec0a014e94f802c378abe41505
+      internalID: -1375044321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neckkle-removebg-preview_86
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 33
+        width: 33
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 209ec5c8ec2742b49b3816b8a9f639b8
+      internalID: -1532790461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neckkle-removebg-preview_87
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 32
+        width: 33
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fbd6b16656a110419cc30ece0baacd5
+      internalID: 1823823212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neckkle-removebg-preview_88
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 30
+        width: 31
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06b0f086a7c9f934fa4fc3adfe107292
+      internalID: -997551306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neckkle-removebg-preview_89
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 29
+        width: 33
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd6c131a113f5e848b3b2fb2871a4c99
+      internalID: 968466306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neckkle-removebg-preview_90
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 36
+        width: 31
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cd2c7880b2a5644fbc8ec2b68ec3c3a
+      internalID: -462783422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: a65790284d30a9e4a80cc3b9b0a11346
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      neckkle-removebg-preview_0: -1146481470
+      neckkle-removebg-preview_1: 1554359960
+      neckkle-removebg-preview_10: 536925228
+      neckkle-removebg-preview_11: -1249326644
+      neckkle-removebg-preview_12: -313279108
+      neckkle-removebg-preview_13: 2063842460
+      neckkle-removebg-preview_14: -708709313
+      neckkle-removebg-preview_15: 410896428
+      neckkle-removebg-preview_16: 1359178658
+      neckkle-removebg-preview_17: 502480652
+      neckkle-removebg-preview_18: 1108686889
+      neckkle-removebg-preview_19: 1875596405
+      neckkle-removebg-preview_2: 546681914
+      neckkle-removebg-preview_20: 38505460
+      neckkle-removebg-preview_21: -1262369219
+      neckkle-removebg-preview_22: 777330513
+      neckkle-removebg-preview_23: -1741033135
+      neckkle-removebg-preview_24: 1970709128
+      neckkle-removebg-preview_25: -1579634507
+      neckkle-removebg-preview_26: 1393549868
+      neckkle-removebg-preview_27: 457119474
+      neckkle-removebg-preview_28: -1309844120
+      neckkle-removebg-preview_29: 1555254282
+      neckkle-removebg-preview_3: -2044964297
+      neckkle-removebg-preview_30: 863168151
+      neckkle-removebg-preview_31: 1404534037
+      neckkle-removebg-preview_32: -1784594720
+      neckkle-removebg-preview_33: 849829189
+      neckkle-removebg-preview_34: -1479313129
+      neckkle-removebg-preview_35: 637454298
+      neckkle-removebg-preview_36: -8724402
+      neckkle-removebg-preview_37: -145607656
+      neckkle-removebg-preview_38: -1938787281
+      neckkle-removebg-preview_39: 1459232957
+      neckkle-removebg-preview_4: -890989574
+      neckkle-removebg-preview_40: -1555488419
+      neckkle-removebg-preview_41: -1982659674
+      neckkle-removebg-preview_42: 1573086650
+      neckkle-removebg-preview_43: -2078569281
+      neckkle-removebg-preview_44: -1143833832
+      neckkle-removebg-preview_45: -477136101
+      neckkle-removebg-preview_46: 828067227
+      neckkle-removebg-preview_47: 1577986994
+      neckkle-removebg-preview_48: 1877874526
+      neckkle-removebg-preview_49: 45904198
+      neckkle-removebg-preview_5: 488894268
+      neckkle-removebg-preview_50: -805960267
+      neckkle-removebg-preview_51: 720656132
+      neckkle-removebg-preview_52: -1000836287
+      neckkle-removebg-preview_53: 1002678305
+      neckkle-removebg-preview_54: -832386611
+      neckkle-removebg-preview_55: -1765975672
+      neckkle-removebg-preview_56: -919725888
+      neckkle-removebg-preview_57: 1798741483
+      neckkle-removebg-preview_58: 1245516872
+      neckkle-removebg-preview_59: 831871375
+      neckkle-removebg-preview_6: -981546181
+      neckkle-removebg-preview_60: -1434909234
+      neckkle-removebg-preview_61: -103659483
+      neckkle-removebg-preview_62: -651269601
+      neckkle-removebg-preview_63: 160783365
+      neckkle-removebg-preview_64: -1626058990
+      neckkle-removebg-preview_65: -1876367794
+      neckkle-removebg-preview_66: -799432779
+      neckkle-removebg-preview_67: 2074096850
+      neckkle-removebg-preview_68: -260039950
+      neckkle-removebg-preview_69: 1898185753
+      neckkle-removebg-preview_7: 965100442
+      neckkle-removebg-preview_70: -1238761749
+      neckkle-removebg-preview_71: -1356009016
+      neckkle-removebg-preview_72: -1100308084
+      neckkle-removebg-preview_73: 1662301215
+      neckkle-removebg-preview_74: -1643251223
+      neckkle-removebg-preview_75: -21335726
+      neckkle-removebg-preview_76: 512405078
+      neckkle-removebg-preview_77: -1505404121
+      neckkle-removebg-preview_78: -2125619665
+      neckkle-removebg-preview_79: 1887775042
+      neckkle-removebg-preview_8: 1198619932
+      neckkle-removebg-preview_80: -1389595913
+      neckkle-removebg-preview_81: 1508533599
+      neckkle-removebg-preview_82: 657331869
+      neckkle-removebg-preview_83: -679070258
+      neckkle-removebg-preview_84: 854289529
+      neckkle-removebg-preview_85: -1375044321
+      neckkle-removebg-preview_86: -1532790461
+      neckkle-removebg-preview_87: 1823823212
+      neckkle-removebg-preview_88: -997551306
+      neckkle-removebg-preview_89: 968466306
+      neckkle-removebg-preview_9: 275694505
+      neckkle-removebg-preview_90: -462783422
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

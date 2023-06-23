@@ -15,6 +15,8 @@ GameObject:
   - component: {fileID: 4900106714158579681}
   - component: {fileID: -160498219846409932}
   - component: {fileID: 3517142763471956463}
+  - component: {fileID: 432654495}
+  - component: {fileID: 807421039736753472}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -187,6 +189,31 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   attack1: {fileID: 4291250116008636125}
   speed: 500
+--- !u!114 &432654495
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3207635935217832931}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbe6143fe0246644ea1914c5e4187526, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &807421039736753472
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3207635935217832931}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e795d43879f5f3c4bb87162845d55a0b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damageToGive: 2
 --- !u!1 &4291250116008636125
 GameObject:
   m_ObjectHideFlags: 0
