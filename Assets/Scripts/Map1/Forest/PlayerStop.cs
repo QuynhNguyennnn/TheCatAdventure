@@ -12,6 +12,9 @@ public class PlayerStop : MonoBehaviour
     private GameObject player;
     [SerializeField]
     private GameObject boss;
+    [SerializeField]
+    private GameObject bossStay;
+
 
     float zoomSize = 6;
     float zoomSpeed = 1f;
@@ -30,12 +33,12 @@ public class PlayerStop : MonoBehaviour
     {
         if (isZoom)
         {
-            ZoomCamera(9);
+            ZoomCam(9);
         }
 
         if (isCamMove)
         {
-            MoveCame();
+            MoveCam();
         }
 
         if (isBossAxist)
@@ -53,24 +56,26 @@ public class PlayerStop : MonoBehaviour
         DeadZone.GetComponent<EdgeCollider2D>().enabled = false;
         cameraController.ToggleIsTarget();
         isZoom = true;
+        bossStay.SetActive(true);
     }
 
-    void ZoomCamera(float target)
+    void ZoomCam(float target)
     {
         zoomSize += zoomSpeed * Time.deltaTime;
         Camera.main.orthographicSize = zoomSize;
-        if (zoomSize >= 9)
+        if (zoomSize >= target)
         {
             isZoom = false;
             isCamMove = true;
         }
     }
     
-    void MoveCame()
+    void MoveCam()
     {
         Camera.main.transform.position = Vector3.MoveTowards(Camera.main.transform.position, DeadZone.transform.position, 10 * Time.deltaTime);
         if (Vector3.Distance(Camera.main.transform.position, DeadZone.transform.position) == 0)
         {
+
             isCamMove = false;
             isBossAxist = true;
         }

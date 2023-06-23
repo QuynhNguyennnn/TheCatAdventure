@@ -10,11 +10,15 @@ public class Boss : MonoBehaviour
     private Boolean m_FacingRight = false;
     public GameObject homePosition;
     PlayerController player;
+    [SerializeField]
+    private GameObject catCollar;
 
     [SerializeField]
     private float speed = 0f;
     bool isMove = false;
     bool isGoHome = false;
+
+    private 
     // Start is called before the first frame update
     void Start()
     {
@@ -105,5 +109,11 @@ public class Boss : MonoBehaviour
     public void ToggleMove()
     {
         isMove = !isMove;
+    }
+
+    public void DropCatCollar()
+    {
+        catCollar.SetActive(true);
+        catCollar.transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z);
     }
 }

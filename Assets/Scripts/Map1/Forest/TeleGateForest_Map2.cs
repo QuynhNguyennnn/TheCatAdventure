@@ -4,19 +4,17 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Telegate : MonoBehaviour
+public class TeleGateForest_Map2 : MonoBehaviour
 {
-    G_Telegate g_Telegate;
     public GameObject player;
-    private float teleCloseTime =1f;
-    private float teleCloseCounter =1f;
+    private float teleCloseTime = 1f;
+    private float teleCloseCounter = 1f;
     private float wait = .5f;
     Animator animator;
     Boolean isClose = false;
     // Start is called before the first frame update
     void Start()
     {
-        g_Telegate = FindObjectOfType<G_Telegate>();
         animator = GetComponent<Animator>();
     }
 
@@ -32,11 +30,11 @@ public class Telegate : MonoBehaviour
                 teleCloseCounter -= Time.deltaTime;
                 if (teleCloseCounter <= 0)
                 {
-                    PlayerPrefs.SetFloat("PlayerPositionX", -27.9f);
-                    PlayerPrefs.SetFloat("PlayerPositionY", 10.6f);
-                    PlayerPrefs.SetFloat("PlayerPositionZ", 0);
+                    //PlayerPrefs.SetFloat("PlayerPositionX", -27.9f);
+                    //PlayerPrefs.SetFloat("PlayerPositionY", 10.6f);
+                    //PlayerPrefs.SetFloat("PlayerPositionZ", 0);
 
-                    SceneManager.LoadScene("Forest");
+                    //SceneManager.LoadScene("Forest");
 
                     Destroy(gameObject);
                 }
@@ -46,7 +44,7 @@ public class Telegate : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player") && g_Telegate.CanGo())
+        if (collision.CompareTag("Player"))
         {
             player.SetActive(false);
             teleCloseCounter = teleCloseTime;

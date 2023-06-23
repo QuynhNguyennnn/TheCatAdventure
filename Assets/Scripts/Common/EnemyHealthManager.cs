@@ -84,6 +84,7 @@ public class EnemyHealthManager : MonoBehaviour
             }
             else
             {
+                b_Controller.DropCatCollar();
                 b_Controller.isDie();
             }
             Destroy(gameObject);

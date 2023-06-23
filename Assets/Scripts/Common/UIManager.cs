@@ -36,4 +36,9 @@ public class UIManager : MonoBehaviour
         guildText.text = "";
         chatBox.SetActive(false);
     }
+
+    public void SetHel(HealthManager healthManager)
+    {
+        this.healthManager = healthManager;
+    }
 }
