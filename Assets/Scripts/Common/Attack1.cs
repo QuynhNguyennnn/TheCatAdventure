@@ -29,4 +29,14 @@ public class Attack1 : MonoBehaviour
             enemyHealth.HurtEnemy(damageToGive);
         }
     }
+
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Enemy") && player.isAttack1())
+        {
+            EnemyHealthManager enemyHealth;
+            enemyHealth = collision.GetComponent<EnemyHealthManager>();
+            enemyHealth.HurtEnemy(damageToGive);
+        }
+    }
 }
