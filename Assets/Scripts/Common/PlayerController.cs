@@ -19,6 +19,8 @@ public class PlayerController : MonoBehaviour
     private float attackCounter = 2 / 3f;
     private bool isAttacking1;
 
+    bool isMove = true;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -29,17 +31,24 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        myRB.velocity = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")).normalized * speed * Time.deltaTime;
-        // normalized make same speed when push all of above
-        myAnimator.SetFloat("moveX", myRB.velocity.x);
-        myAnimator.SetFloat("moveY", myRB.velocity.y);
+        Debug.Log("PC: " + isMove);
 
+<<<<<<< HEAD
         if (Input.GetAxisRaw("Horizontal") == 1 || Input.GetAxisRaw("Horizontal") == -1 || Input.GetAxisRaw("Vertical") == 1 || Input.GetAxisRaw("Vertical") == -1)
         {
             myAnimator.SetFloat("lastMoveX", Input.GetAxisRaw("Horizontal"));
             myAnimator.SetFloat("lastMoveY", Input.GetAxisRaw("Vertical"));
         }
 
+=======
+        if (isMove)
+        {
+            myRB.velocity = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")).normalized * speed * Time.deltaTime;
+            // normalized make same speed when push all of above
+            myAnimator.SetFloat("moveX", myRB.velocity.x);
+            myAnimator.SetFloat("moveY", myRB.velocity.y);
+        }
+>>>>>>> origin/map1v2
         if (isAttacking1)
         {
             attackCounter -= Time.deltaTime;
@@ -97,5 +106,14 @@ public class PlayerController : MonoBehaviour
     public Boolean isFlip()
     {
         return m_FacingRight;
+    }
+
+    public void ToggleMove()
+    {
+        isMove = !isMove;
+        myRB.velocity = new Vector2(0,0).normalized * speed * Time.deltaTime;
+        // normalized make same speed when push all of above
+        myAnimator.SetFloat("moveX", myRB.velocity.x);
+        myAnimator.SetFloat("moveY", myRB.velocity.y);
     }
 }

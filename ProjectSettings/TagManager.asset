@@ -10,7 +10,10 @@ TagManager:
   - GoIn1
   - GoIn2
   - GoOut2
+<<<<<<< HEAD
   - NPC
+=======
+>>>>>>> origin/map1v2
   layers:
   - Default
   - TransparentFX
@@ -49,8 +52,15 @@ TagManager:
     uniqueID: 0
     locked: 0
   - name: Background
+<<<<<<< HEAD
     uniqueID: 3757133793
     locked: 0
   - name: Player
     uniqueID: 462026627
+=======
+    uniqueID: 1575131389
+    locked: 0
+  - name: Player
+    uniqueID: 1140738745
+>>>>>>> origin/map1v2
     locked: 0
