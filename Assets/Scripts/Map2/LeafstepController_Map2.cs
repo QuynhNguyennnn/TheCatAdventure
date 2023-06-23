@@ -10,7 +10,7 @@ public class LeafstepController_Map2 : MonoBehaviour
     private PlayerController player;
     private Boolean m_FacingRight = false;
     [SerializeField]
-    private Boolean hasKey = false;
+    public Boolean hasKey = false;
 
     [SerializeField]
     private float speed = 0f;
