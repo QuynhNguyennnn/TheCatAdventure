@@ -10,6 +10,7 @@ TagManager:
   - GoIn1
   - GoIn2
   - GoOut2
+  - NPC
   layers:
   - Default
   - TransparentFX
