@@ -1,4 +1,6 @@
 using System;
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
@@ -7,7 +9,7 @@ public class PlayerController : MonoBehaviour
     private Animator myAnimator;
     private Boolean m_FacingRight = false;
 
-
+    
     public GameObject attack1;
     [SerializeField]
     private float speed = 0f;
@@ -15,9 +17,11 @@ public class PlayerController : MonoBehaviour
     private float appearTime = 2 / 3f;
     private float appearCounter = 2 / 3f;
 
-    private float attackTime = 2 / 3f;
-    private float attackCounter = 2 / 3f;
+    private float attackTime = 2/3f;
+    private float attackCounter = 2/3f;
     private bool isAttacking1;
+
+    bool isMove = true;
 
     // Start is called before the first frame update
     void Start()
@@ -29,28 +33,25 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        myRB.velocity = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")).normalized * speed * Time.deltaTime;
-        // normalized make same speed when push all of above
-        myAnimator.SetFloat("moveX", myRB.velocity.x);
-        myAnimator.SetFloat("moveY", myRB.velocity.y);
+        Debug.Log("PC: " + isMove);
 
-        if (Input.GetAxisRaw("Horizontal") == 1 || Input.GetAxisRaw("Horizontal") == -1 || Input.GetAxisRaw("Vertical") == 1 || Input.GetAxisRaw("Vertical") == -1)
+        if (isMove)
         {
-            myAnimator.SetFloat("lastMoveX", Input.GetAxisRaw("Horizontal"));
-            myAnimator.SetFloat("lastMoveY", Input.GetAxisRaw("Vertical"));
+            myRB.velocity = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")).normalized * speed * Time.deltaTime;
+            // normalized make same speed when push all of above
+            myAnimator.SetFloat("moveX", myRB.velocity.x);
+            myAnimator.SetFloat("moveY", myRB.velocity.y);
         }
-
         if (isAttacking1)
         {
             attackCounter -= Time.deltaTime;
-            if (attackCounter <= 0)
-            {
+            if (attackCounter <= 0) {
                 myAnimator.SetBool("isAttacking1", false);
                 isAttacking1 = false;
             }
 
             appearCounter -= Time.deltaTime;
-            if (appearCounter >= (2 / 3f - (2 / 3f) * (3 / 4f)) && appearCounter <= (2 / 3f - (2 / 3f) * (2 / 4f)))
+            if (appearCounter >= (2 / 3f - (2 / 3f)*(3 / 4f)) && appearCounter <= (2 / 3f - (2 / 3f) * (2/4f)))
             {
                 attack1.SetActive(true);
             }
@@ -61,7 +62,7 @@ public class PlayerController : MonoBehaviour
             }
         }
 
-        if (Input.GetKeyDown(KeyCode.T))
+        if(Input.GetKeyDown(KeyCode.T))
         {
             appearCounter = appearTime;
             attackCounter = attackTime;
@@ -73,7 +74,7 @@ public class PlayerController : MonoBehaviour
         {
             Flip();
         }
-        else if (myRB.velocity.x < 0 && m_FacingRight == false)
+        else if(myRB.velocity.x < 0 && m_FacingRight == false) 
         {
             Flip();
         }
@@ -97,5 +98,14 @@ public class PlayerController : MonoBehaviour
     public Boolean isFlip()
     {
         return m_FacingRight;
+    }
+
+    public void ToggleMove()
+    {
+        isMove = !isMove;
+        myRB.velocity = new Vector2(0,0).normalized * speed * Time.deltaTime;
+        // normalized make same speed when push all of above
+        myAnimator.SetFloat("moveX", myRB.velocity.x);
+        myAnimator.SetFloat("moveY", myRB.velocity.y);
     }
 }

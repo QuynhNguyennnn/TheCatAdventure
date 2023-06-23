@@ -10,7 +10,6 @@ TagManager:
   - GoIn1
   - GoIn2
   - GoOut2
-  - NPC
   layers:
   - Default
   - TransparentFX
@@ -49,8 +48,8 @@ TagManager:
     uniqueID: 0
     locked: 0
   - name: Background
-    uniqueID: 3757133793
+    uniqueID: 1575131389
     locked: 0
   - name: Player
-    uniqueID: 462026627
+    uniqueID: 1140738745
     locked: 0
