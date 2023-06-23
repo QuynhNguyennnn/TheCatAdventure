@@ -1,7 +1,4 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Runtime.InteropServices.WindowsRuntime;
 using UnityEngine;
 
 public class EnemyController : MonoBehaviour
@@ -30,27 +27,29 @@ public class EnemyController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-            if (Vector3.Distance(target.position, transform.position) <= maxRange && Vector3.Distance(target.position, transform.position) >= minRange)
-            {
-                FollowPlayer();
-            }
-            else if (Vector3.Distance(target.position, transform.position) >= maxRange)
-            {
-                GoHome();
-            }
+        if (Vector3.Distance(target.position, transform.position) <= maxRange && Vector3.Distance(target.position, transform.position) >= minRange)
+        {
+            FollowPlayer();
+        }
+        else if (Vector3.Distance(target.position, transform.position) >= maxRange)
+        {
+            GoHome();
+        }
     }
 
     public void FollowPlayer()
     {
         myAnim.SetBool("isMoving", true);
-
-        if(target.position.x - transform.position.x > 0 && m_FacingRight == true)
+        myAnim.SetFloat("moveX", target.position.x - transform.position.x);
+        myAnim.SetFloat("moveY", target.position.y - transform.position.y);
+        if (target.position.x - transform.position.x > 0 && m_FacingRight == true)
         {
             Flip();
-        } else if (target.position.x - transform.position.x < 0 && m_FacingRight == false)
-        { 
-            Flip(); 
-        } 
+        }
+        else if (target.position.x - transform.position.x < 0 && m_FacingRight == false)
+        {
+            Flip();
+        }
         transform.position = Vector3.MoveTowards(transform.position, target.transform.position, speed * Time.deltaTime);
     }
 
@@ -83,7 +82,7 @@ public class EnemyController : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.tag == "AttackRange" && player.isAttack1())
+        if (collision.tag == "AttackRange" && player.isAttack1())
         {
             Vector2 difference = transform.position - collision.transform.position;
             transform.position = new Vector2(transform.position.x + difference.x, transform.position.y + difference.y);
