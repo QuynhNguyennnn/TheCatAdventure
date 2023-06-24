@@ -8,6 +8,7 @@ public class MagicCatDialogue : MonoBehaviour
     //CatMove catMove;
     //WizardController wController;
     string[] conversation;
+    PlayerController playerController;
     int count = 0;
     Boolean firstTouch = true;
     Boolean isTouch;
@@ -16,14 +17,16 @@ public class MagicCatDialogue : MonoBehaviour
     {
         isTouch = false;
         manager = FindObjectOfType<UIManager>();
+        playerController = FindObjectOfType<PlayerController>();
         //catMove = cat.GetComponent<CatMove>();
         //wController = FindObjectOfType<WizardController>();
         //Debug.Log(catMove);
-        conversation = new string[5];
+        conversation = new string[6];
         conversation[0] = "Magic Cat: Congratulation, you have the third cat necklace!";
         conversation[1] = "Player: Theresia want me to meet you.";
         conversation[2] = "Magic Cat: Meow... Meow... I see I see!";
-        conversation[3] = "Magic Cat: If you want to going foward to the next travel, you need to killing the ghost. The ghost who is the devil in the forest which stranger magic";
+        conversation[3] = "Magic Cat: Reasons to help others? There is no reason to do it at all for the sake of simply helping why need a reason? I believe that's what you've learned on this journey";
+        conversation[4] = "Magic Cat: If you want to going foward to the next travel, you need to killing the ghost. The ghost who is the devil in the forest which stranger magic";
     }
 
     // Update is called once per frame
@@ -49,13 +52,14 @@ public class MagicCatDialogue : MonoBehaviour
             manager.OffGuild();
         }
 
-        if (count == 4)
+        if (count == 5)
         {
             manager.OffGuild();
             //catMove.SetPos(1);
             //wController.SetPos(0);
             firstTouch = false;
             //telegate.SetActive(true);
+            playerController.GetComponent<HealthManager>().currentHealth = 50;
             gameObject.SetActive(false);
             Destroy(gameObject);
         }

@@ -34,7 +34,7 @@ public class TheresiaController : MonoBehaviour
         Vector3 direction = target.position - transform.position;
         float distance = direction.magnitude;
 
-        if (distance > 0.5f) // Adjust the distance threshold as needed
+        if (distance > 1.5f) // Adjust the distance threshold as needed
         {
             // Calculate the normalized direction vector
             Vector3 normalizedDirection = direction.normalized;
