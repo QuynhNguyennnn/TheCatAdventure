@@ -34,7 +34,5 @@ public class AttackMap2 : MonoBehaviour
             enemyHealth = collision.GetComponent<SkeletonBossHealthManagement>();
             enemyHealth.HurtEnemy(damageToGive);
         }
-
-
     }
 }
