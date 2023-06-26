@@ -94,7 +94,7 @@ public class PlayerController : MonoBehaviour
         return isAttacking1;
     }
 
-    public Boolean isFlip()
+    public bool isFlip()
     {
         return m_FacingRight;
     }
@@ -106,5 +106,10 @@ public class PlayerController : MonoBehaviour
         // normalized make same speed when push all of above
         myAnimator.SetFloat("moveX", myRB.velocity.x);
         myAnimator.SetFloat("moveY", myRB.velocity.y);
+    }
+
+    public void SetFacing()
+    {
+        m_FacingRight = !m_FacingRight;
     }
 }

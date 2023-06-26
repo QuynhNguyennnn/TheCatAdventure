@@ -11,6 +11,8 @@ public class TheresiaDialogue : MonoBehaviour
     int count = 0;
     Boolean firstTouch = true;
     Boolean isTouch;
+    [SerializeField]
+    private GameObject catBrownDialog;
     //public GameObject telegate;
     // Start is called before the first frame update
 
@@ -19,6 +21,7 @@ public class TheresiaDialogue : MonoBehaviour
     {
         isTouch = false;
         manager = FindObjectOfType<UIManager>();
+        Debug.Log(manager);
         //catMove = cat.GetComponent<CatMove>();
         //wController = FindObjectOfType<WizardController>();
         //Debug.Log(catMove);
@@ -45,6 +48,7 @@ public class TheresiaDialogue : MonoBehaviour
 
         if (isTouch && firstTouch)
         {
+            Debug.Log(conversation[count]);
             manager.ShowGuild(conversation[count]);
         }
         else
@@ -60,6 +64,7 @@ public class TheresiaDialogue : MonoBehaviour
             firstTouch = false;
             //telegate.SetActive(true);
             gameObject.SetActive(false);
+            catBrownDialog.SetActive(true);
             Destroy(gameObject);
         }
     }
