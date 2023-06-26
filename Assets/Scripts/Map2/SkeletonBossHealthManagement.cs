@@ -77,8 +77,8 @@ public class SkeletonBossHealthManagement : MonoBehaviour
         {
             Debug.Log("Boss was died");
             controller.isDie();
-            Destroy(gameObject);
             necklaceMap2.SetActive(true);
+            Destroy(gameObject);
         }
     }
 }
