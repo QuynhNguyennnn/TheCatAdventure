@@ -5,7 +5,7 @@ using UnityEngine;
 public class AttackMap2 : MonoBehaviour
 {
     PlayerController player;
-    public int damageToGive = 2;
+    public int damageToGive = 0;
 
     // Start is called before the first frame update
     void Start()
