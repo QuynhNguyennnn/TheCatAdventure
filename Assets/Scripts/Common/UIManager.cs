@@ -27,9 +27,8 @@ public class UIManager : MonoBehaviour
 
     public void ShowGuild(string guildTextNew)
     {
-
-        chatBox.SetActive(true);
         guildText.text = guildTextNew;
+        chatBox.SetActive(true);
     }
 
     public void OffGuild()
