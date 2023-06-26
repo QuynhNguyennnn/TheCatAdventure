@@ -33,6 +33,7 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
         if (isMove)
         {
             myRB.velocity = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")).normalized * speed * Time.deltaTime;
@@ -105,25 +106,5 @@ public class PlayerController : MonoBehaviour
         // normalized make same speed when push all of above
         myAnimator.SetFloat("moveX", myRB.velocity.x);
         myAnimator.SetFloat("moveY", myRB.velocity.y);
-    }
-
-    public void setRB(Rigidbody2D rigidbody)
-    {
-        myRB = rigidbody;
-    }
-
-    public void setAni(Animator animator)
-    {
-        myAnimator = animator;
-    }
-
-    public bool GetFacing()
-    {
-        return m_FacingRight;
-    }
-
-    public void SetFacing()
-    {
-        m_FacingRight = !m_FacingRight;
     }
 }

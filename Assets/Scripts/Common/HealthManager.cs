@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class HealthManager : MonoBehaviour
 {
@@ -40,6 +41,7 @@ public class HealthManager : MonoBehaviour
                 Debug.Log(isDie);
                 isDie = false;
             }
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
 
         if (flashActive)

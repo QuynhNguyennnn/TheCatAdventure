@@ -1,6 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class Attack1 : MonoBehaviour
@@ -17,10 +14,20 @@ public class Attack1 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Enemy") && player.isAttack1())
+        {
+            EnemyHealthManager enemyHealth;
+            enemyHealth = collision.GetComponent<EnemyHealthManager>();
+            enemyHealth.HurtEnemy(damageToGive);
+        }
+    }
+
+    private void OnTriggerStay2D(Collider2D collision)
     {
         if (collision.CompareTag("Enemy") && player.isAttack1())
         {
