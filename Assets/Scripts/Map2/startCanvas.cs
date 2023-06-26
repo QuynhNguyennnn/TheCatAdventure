@@ -25,13 +25,14 @@ public class startCanvas : MonoBehaviour
         isTouch = false;
         UIManager = FindObjectOfType<UIManager>();
         animatorWizard = Wizard.GetComponent<Animator>();
-        conversation = new string[5];
+        conversation = new string[7];
         conversation[0] = "Elric(joy): Well done lad, you passed the first challenge and found 1 of the 5 shards of the cat necklace!";
         conversation[1] = "Player: As you say, this journey is certainly full of new and dangerous experiences. But we can only rise to the challenge and discover the beauty of this magical world with courage and determination.";
         conversation[2] = "Elric(severe): We have overcome the initial hurdles. But there's not much time left to waste. First, to overcome this mysterious forest, he must have a comrade who will accompany him to overcome difficulties and challenges on the upcoming journey.";
         conversation[3] = "Player(interested): great! Where can I find that person?";
-        conversation[4] = "Elric(blandly): go north towards the cover one by one you will find that person.";
-
+        conversation[4] = "Elric(blandly): go north towards the cover one by one you will find that person."; 
+        conversation[5] = "Elric: I go first!";
+        conversation[6] = "Meow! See you again hero!";
     }
 
     // Update is called once per frame

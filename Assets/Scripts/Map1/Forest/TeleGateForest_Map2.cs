@@ -30,11 +30,11 @@ public class TeleGateForest_Map2 : MonoBehaviour
                 teleCloseCounter -= Time.deltaTime;
                 if (teleCloseCounter <= 0)
                 {
-                    PlayerPrefs.SetFloat("PlayerPositionX", -27.9f);
-                    PlayerPrefs.SetFloat("PlayerPositionY", 10.6f);
+                    PlayerPrefs.SetFloat("PlayerPositionX", -20.6f);
+                    PlayerPrefs.SetFloat("PlayerPositionY", 14.4f);
                     PlayerPrefs.SetFloat("PlayerPositionZ", 0);
 
-                    SceneManager.LoadScene("Map1");
+                    SceneManager.LoadScene("Map2");
                 }
             }
         }

@@ -13,6 +13,8 @@ public class ShowG_FirstMeet : MonoBehaviour
     int count = 0;
     Boolean firstTouch = true;
     Boolean isTouch;
+    [SerializeField]
+    private GameObject player;
     public GameObject telegate;
     // Start is called before the first frame update
     void Start()
@@ -59,6 +61,7 @@ public class ShowG_FirstMeet : MonoBehaviour
             wController.SetPos(0);
             firstTouch = false;
             telegate.SetActive(true);
+            player.GetComponent<PlayerController>().ToggleMove();
             gameObject.SetActive(false);
         }
     }
@@ -66,6 +69,7 @@ public class ShowG_FirstMeet : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         isTouch = true;
+        player.GetComponent<PlayerController>().ToggleMove();
     }
 
     private void OnTriggerExit2D(Collider2D collision)

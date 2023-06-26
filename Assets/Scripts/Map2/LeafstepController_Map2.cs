@@ -13,7 +13,7 @@ public class LeafstepController_Map2 : MonoBehaviour
     public Boolean hasKey = false;
 
     [SerializeField]
-    private float speed = 0f;
+    public float speed = 0f;
 
     // Start is called before the first frame update
     void Start()
@@ -61,8 +61,8 @@ public class LeafstepController_Map2 : MonoBehaviour
 
     private void Idle()
     {
-        myAnim.SetFloat("moveX", (target.position.x));
-        myAnim.SetFloat("moveY", (target.position.y));
+        myAnim.SetFloat("moveX", (transform.position.x));
+        myAnim.SetFloat("moveY", (transform.position.y));
 
     }
 
@@ -75,4 +75,6 @@ public class LeafstepController_Map2 : MonoBehaviour
         theScale.x *= -1;
         transform.localScale = theScale;
     }
+
+
 }

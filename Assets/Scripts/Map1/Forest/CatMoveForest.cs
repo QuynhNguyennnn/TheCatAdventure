@@ -40,7 +40,7 @@ public class CatMoveForest : MonoBehaviour
 
         if (transform.position != homePosition.transform.position)
         {
-            transform.position = Vector3.MoveTowards(transform.position, homePosition.transform.position, speed * Time.deltaTime);
+            transform.position = Vector2.MoveTowards(transform.position, homePosition.transform.position, speed * Time.deltaTime);
         }
     }
 

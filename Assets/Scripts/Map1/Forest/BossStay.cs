@@ -11,6 +11,7 @@ public class BossStay : MonoBehaviour
     GameObject boss;
     PlayerController player;
     bool isFirstTouch = true;
+    bool isTouch = false;
 
     // Start is called before the first frame update
     void Start()
@@ -23,12 +24,12 @@ public class BossStay : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space) && isFirstTouch)
+        if (Input.GetKeyDown(KeyCode.Space) && isTouch)
         {
             manager.OffGuild();
             boss.GetComponent<Boss>().ToggleMove();
             player.ToggleMove();
-            isFirstTouch = false;
+            isTouch = false;
         }
         Debug.Log(isFirstTouch);
 
@@ -41,6 +42,8 @@ public class BossStay : MonoBehaviour
             Debug.Log("dacham");
             Deadzone.GetComponent<EdgeCollider2D>().enabled = true;
             manager.ShowGuild("Elric: Kill the boss and then continue the journey!");
+            isTouch = true;
+            isFirstTouch = false;
         } 
     }
 }

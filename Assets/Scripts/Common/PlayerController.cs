@@ -102,6 +102,8 @@ public class PlayerController : MonoBehaviour
     public void ToggleMove()
     {
         isMove = !isMove;
+        Debug.Log(myRB);
+
         myRB.velocity = new Vector2(0,0).normalized * speed * Time.deltaTime;
         // normalized make same speed when push all of above
         myAnimator.SetFloat("moveX", myRB.velocity.x);
