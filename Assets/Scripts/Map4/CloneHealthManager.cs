@@ -6,8 +6,9 @@ public class CloneHealthManager : MonoBehaviour
 {
     public int currentHealth;
     public int maxHealth;
-    EnemyController e_Controller;
+    CloneController cController;
     Boss b_Controller;
+    [SerializeField]
     private GameObject necklaceMap4;
 
     private bool flashActive;
@@ -20,8 +21,8 @@ public class CloneHealthManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        e_Controller = GetComponent<EnemyController>();
-        if (e_Controller == null)
+        cController = GetComponent<CloneController>();
+        if (cController == null)
         {
             b_Controller = GetComponent<Boss>();
             isE_Controller = false;
@@ -81,9 +82,16 @@ public class CloneHealthManager : MonoBehaviour
         currentHealth -= damageToGive;
         if (currentHealth <= 0)
         {
-            Debug.Log("Boss was died");
-            e_Controller.isDie();
-            necklaceMap4.SetActive(true);
+            if (isE_Controller)
+            {
+                cController.isDie();
+            }
+            else
+            {
+                Debug.Log("Boss was died");
+                cController.isDie();
+                necklaceMap4.SetActive(true);
+            }
             Destroy(gameObject);
         }
     }
