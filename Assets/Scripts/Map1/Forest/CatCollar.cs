@@ -59,7 +59,6 @@ public class CatCollar : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(playerController.GetFacing());
         Debug.Log(playerStoped.transform.position.x - player.transform.position.x);
         if (isMove)
         {
@@ -68,11 +67,11 @@ public class CatCollar : MonoBehaviour
 
             p_animator.SetFloat("moveY", playerStoped.transform.position.y - player.transform.position.y);
 
-            if ((playerStoped.transform.position.x - player.transform.position.x) > 0 && playerController.GetFacing() == true)
+            if ((playerStoped.transform.position.x - player.transform.position.x) > 0 && playerController.isFlip() == true)
             {
                 Flip();
             }
-            else if ((playerStoped.transform.position.x - player.transform.position.x) < 0 && playerController.GetFacing() == false)
+            else if ((playerStoped.transform.position.x - player.transform.position.x) < 0 && playerController.isFlip() == false)
             {
                 Flip();
             }
@@ -82,7 +81,7 @@ public class CatCollar : MonoBehaviour
         {
             cat.SetActive(true);
             cat.GetComponent<CatMoveForest>().SetPos(0);
-            if (playerController.GetFacing() == true)
+            if (playerController.isFlip() == true)
             {
                 Flip();
             }

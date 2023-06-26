@@ -11,6 +11,8 @@ public class WilhelmDialogue : MonoBehaviour
     int count = 0;
     Boolean firstTouch = true;
     Boolean isTouch;
+    [SerializeField]
+    private GameObject necklaceDialog;
 
     // Start is called before the first frame update
     void Start()
@@ -52,6 +54,7 @@ public class WilhelmDialogue : MonoBehaviour
 
         if (count == 4)
         {
+            necklaceDialog.SetActive(true);
             manager.OffGuild();
             //catMove.SetPos(1);
             //wController.SetPos(0);

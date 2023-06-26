@@ -11,6 +11,11 @@ public class NecklaceDialogue : MonoBehaviour
     int count = 0;
     Boolean firstTouch = true;
     Boolean isTouch;
+    [SerializeField]
+    private GameObject magicCatDialog;
+    [SerializeField]
+    private GameObject catNeck;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -49,6 +54,8 @@ public class NecklaceDialogue : MonoBehaviour
 
         if (count == 2)
         {
+            catNeck.SetActive(false);
+            magicCatDialog.SetActive(true);
             manager.OffGuild();
             //catMove.SetPos(1);
             //wController.SetPos(0);
