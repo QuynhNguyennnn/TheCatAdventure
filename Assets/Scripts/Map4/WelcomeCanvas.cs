@@ -14,9 +14,10 @@ public class WelcomeCanvas : MonoBehaviour
         isTouch = false;
         manager = FindObjectOfType<UIManager>();
         Debug.Log("Start scene");
-        conversation = new string[3];
-        conversation[0] = "Player (curious): This is the third necklace.";
-        conversation[1] = "Theresia: You need to meet the Magic Cat to see the next Task.";
+        conversation = new string[4];
+        conversation[0] = "Welcome to the Enchanted Forest.";
+        conversation[1] = "This is where your memories and past are kept.";
+        conversation[2] = "Let's fight and overcome them to move forward.";
     }
 
     // Update is called once per frame
@@ -42,7 +43,7 @@ public class WelcomeCanvas : MonoBehaviour
             manager.OffGuild();
         }
 
-        if (count == 2)
+        if (count == 3)
         {
             manager.OffGuild();
             //catMove.SetPos(1);
