@@ -58,7 +58,7 @@ public class CongratulationController : MonoBehaviour
         else if (Input.GetKeyDown(KeyCode.K))
         {
             isChoose = 2;
-            SceneManager.LoadScene("Map1");
+            SceneManager.SetActiveScene(SceneManager.GetSceneByName("Map1"));
         }
         if (isDone && isChoose == 0)
         {
