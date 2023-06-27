@@ -79,7 +79,7 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    private void Flip()
+    public void Flip()
     {
         // Switch the way the player is labelled as facing.
         m_FacingRight = !m_FacingRight;
@@ -102,16 +102,10 @@ public class PlayerController : MonoBehaviour
     public void ToggleMove()
     {
         isMove = !isMove;
-        Debug.Log(myRB);
 
         myRB.velocity = new Vector2(0,0).normalized * speed * Time.deltaTime;
         // normalized make same speed when push all of above
         myAnimator.SetFloat("moveX", myRB.velocity.x);
         myAnimator.SetFloat("moveY", myRB.velocity.y);
-    }
-
-    public void SetFacing()
-    {
-        m_FacingRight = !m_FacingRight;
     }
 }

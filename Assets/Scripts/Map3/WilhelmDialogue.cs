@@ -13,6 +13,8 @@ public class WilhelmDialogue : MonoBehaviour
     Boolean isTouch;
     [SerializeField]
     private GameObject necklaceDialog;
+    [SerializeField]
+    private GameObject player;
 
     // Start is called before the first frame update
     void Start()
@@ -61,6 +63,7 @@ public class WilhelmDialogue : MonoBehaviour
             firstTouch = false;
             //telegate.SetActive(true);
             gameObject.SetActive(false);
+            player.GetComponent<PlayerController>().ToggleMove();
             Destroy(gameObject);
         }
     }
@@ -68,6 +71,7 @@ public class WilhelmDialogue : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         isTouch = true;
+        player.GetComponent<PlayerController>().ToggleMove();
     }
 
     private void OnTriggerExit2D(Collider2D collision)

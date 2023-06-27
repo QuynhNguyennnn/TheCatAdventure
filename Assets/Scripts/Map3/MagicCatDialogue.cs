@@ -12,6 +12,11 @@ public class MagicCatDialogue : MonoBehaviour
     int count = 0;
     Boolean firstTouch = true;
     Boolean isTouch;
+
+    [SerializeField]
+    private GameObject playerStop;
+    [SerializeField]
+    private GameObject row;
     // Start is called before the first frame update
     void Start()
     {
@@ -60,7 +65,10 @@ public class MagicCatDialogue : MonoBehaviour
             firstTouch = false;
             //telegate.SetActive(true);
             playerController.GetComponent<HealthManager>().currentHealth = 50;
+            playerController.ToggleMove();
             gameObject.SetActive(false);
+            playerStop.SetActive(true);
+            row.SetActive(false);
             Destroy(gameObject);
         }
 
@@ -68,6 +76,7 @@ public class MagicCatDialogue : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         isTouch = true;
+        playerController.ToggleMove();
     }
 
     private void OnTriggerExit2D(Collider2D collision)

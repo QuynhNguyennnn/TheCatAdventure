@@ -6,6 +6,7 @@ public class TheresiaController : MonoBehaviour
     private Transform target;
     private PlayerController player;
     private bool m_FacingRight = false;
+    bool isMove = true;
 
     [SerializeField]
     private float speed = 2f; // Adjust the speed as needed
@@ -18,13 +19,20 @@ public class TheresiaController : MonoBehaviour
         {
             target = player.transform;
         }
+        
     }
 
     private void Update()
     {
-        if (target != null)
+        if (isMove)
         {
-            FollowPlayer();
+            if (target != null)
+            {
+                FollowPlayer();
+            }
+        } else
+        {
+            target = transform;
         }
     }
 
@@ -46,5 +54,10 @@ public class TheresiaController : MonoBehaviour
             myAnim.SetFloat("moveX", normalizedDirection.x);
             myAnim.SetFloat("moveY", normalizedDirection.y);
         }
+    }
+
+    public void ToggleMove()
+    {
+        isMove = !isMove;
     }
 }

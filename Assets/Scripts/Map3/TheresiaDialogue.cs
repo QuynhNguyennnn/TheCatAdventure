@@ -8,11 +8,16 @@ public class TheresiaDialogue : MonoBehaviour
     //CatMove catMove;
     //WizardController wController;
     string[] conversation;
+
+    [SerializeField]
+    private GameObject catRed;
     int count = 0;
     Boolean firstTouch = true;
     Boolean isTouch;
     [SerializeField]
     private GameObject catBrownDialog;
+    [SerializeField]
+    private GameObject player;
     //public GameObject telegate;
     // Start is called before the first frame update
 
@@ -25,11 +30,9 @@ public class TheresiaDialogue : MonoBehaviour
         //catMove = cat.GetComponent<CatMove>();
         //wController = FindObjectOfType<WizardController>();
         //Debug.Log(catMove);
-        conversation = new string[5];
-        conversation[0] = "Player (curious): Listen! I hear cries from afar. Let's find out what's happening.";
-        conversation[1] = "Elric (heartbroken): These cats have no home. They need our help.";
-        conversation[2] = "Summer the cat (whispering): Meow... Meow... (We don't need a reason to help.)";
-        conversation[3] = "Player (determined): You're right, Summer. There's no need for a reason to help others. Let's assist these cats and defeat the pursuing monster.";
+        conversation = new string[2];
+        conversation[0] = "Theresia: Meow! (Hero please help us!)";
+        conversation[1] = "Player (determined): Okay I'll help everyone!";
     }
 
     // Update is called once per frame
@@ -46,9 +49,8 @@ public class TheresiaDialogue : MonoBehaviour
             //}
         }
 
-        if (isTouch && firstTouch)
+        if (isTouch && firstTouch && count <2)
         {
-            Debug.Log(conversation[count]);
             manager.ShowGuild(conversation[count]);
         }
         else
@@ -56,14 +58,12 @@ public class TheresiaDialogue : MonoBehaviour
             manager.OffGuild();
         }
 
-        if (count == 4)
+        if (count == 2)
         {
             manager.OffGuild();
-            //catMove.SetPos(1);
-            //wController.SetPos(0);
             firstTouch = false;
-            //telegate.SetActive(true);
             gameObject.SetActive(false);
+            player.GetComponent<PlayerController>().ToggleMove();
             catBrownDialog.SetActive(true);
             Destroy(gameObject);
         }
@@ -72,6 +72,8 @@ public class TheresiaDialogue : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         isTouch = true;
+        player.GetComponent<PlayerController>().ToggleMove();
+        catRed.SetActive(true);
     }
 
     private void OnTriggerExit2D(Collider2D collision)

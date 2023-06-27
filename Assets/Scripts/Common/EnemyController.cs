@@ -9,6 +9,8 @@ public class EnemyController : MonoBehaviour
     public GameObject homePosition;
     PlayerController player;
 
+    bool isMove = true;
+
     [SerializeField]
     private float speed = 0f;
     [SerializeField]
@@ -27,13 +29,16 @@ public class EnemyController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Vector3.Distance(target.position, transform.position) <= maxRange && Vector3.Distance(target.position, transform.position) >= minRange)
+        if (isMove)
         {
-            FollowPlayer();
-        }
-        else if (Vector3.Distance(target.position, transform.position) >= maxRange)
-        {
-            GoHome();
+            if (Vector3.Distance(target.position, transform.position) <= maxRange && Vector3.Distance(target.position, transform.position) >= minRange)
+            {
+                FollowPlayer();
+            }
+            else if (Vector3.Distance(target.position, transform.position) >= maxRange)
+            {
+                GoHome();
+            }
         }
     }
 
@@ -97,5 +102,10 @@ public class EnemyController : MonoBehaviour
     public void isDie()
     {
         Destroy(homePosition);
+    }
+
+    public void ToggleMove()
+    {
+        isMove = !isMove;
     }
 }

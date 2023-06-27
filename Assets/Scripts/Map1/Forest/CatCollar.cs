@@ -69,11 +69,11 @@ public class CatCollar : MonoBehaviour
 
             if ((playerStoped.transform.position.x - player.transform.position.x) > 0 && playerController.isFlip() == true)
             {
-                Flip();
+                playerController.Flip();
             }
             else if ((playerStoped.transform.position.x - player.transform.position.x) < 0 && playerController.isFlip() == false)
             {
-                Flip();
+                playerController.Flip();
             }
         }
 
@@ -83,7 +83,7 @@ public class CatCollar : MonoBehaviour
             cat.GetComponent<CatMoveForest>().SetPos(0);
             if (playerController.isFlip() == true)
             {
-                Flip();
+                playerController.Flip();
             }
             isMove = false;
         }
@@ -129,16 +129,6 @@ public class CatCollar : MonoBehaviour
             gameObject.GetComponent<Renderer>().sortingOrder = -1;
             isCamMove = true;
         }
-    }
-
-    private void Flip()
-    {
-        // Switch the way the player is labelled as facing.
-        playerController.SetFacing();
-        // Multiply the player's x local scale by -1.
-        Vector3 theScale = player.transform.localScale;
-        theScale.x *= -1;
-        player.transform.localScale = theScale;
     }
 
     void ZoomCam(float target)

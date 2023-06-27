@@ -11,6 +11,7 @@ public class HurtPlayer : MonoBehaviour
 
     [SerializeField]
     private int damageToGive = 0;
+    bool isWait = false;
 
     // Start is called before the first frame update
     void Start()
@@ -39,11 +40,22 @@ public class HurtPlayer : MonoBehaviour
                 waitToHurt = 2f;
             }
         }
+
+
+        if (isWait)
+        {
+            waitToHurt -= Time.deltaTime;
+            if(waitToHurt <= 0)
+            {
+                waitToHurt = 2f;
+                isWait = false;
+            }
+        }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.collider.tag == "Player")
+        if (collision.collider.tag == "Player" && isWait == false)
         {
             if (collision.gameObject.GetComponent<HealthManager>().currentHealth > 0)
             {
@@ -53,6 +65,7 @@ public class HurtPlayer : MonoBehaviour
                 //reloading = true;
             }
         }
+
     }
 
     private void OnCollisionStay2D(Collision2D collision)
@@ -68,7 +81,13 @@ public class HurtPlayer : MonoBehaviour
         if (collision.collider.tag == "Player")
         {
             isTouching = false;
-            waitToHurt = 2f;
+            if (waitToHurt > 0)
+            {
+                isWait = true;
+            } else
+            {
+                waitToHurt = 2f;
+            }
         }
     }
 

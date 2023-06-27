@@ -14,6 +14,8 @@ public class NecklaceDialogue : MonoBehaviour
     [SerializeField]
     private GameObject magicCatDialog;
     [SerializeField]
+    private GameObject player;
+    [SerializeField]
     private GameObject catNeck;
 
     // Start is called before the first frame update
@@ -62,12 +64,14 @@ public class NecklaceDialogue : MonoBehaviour
             firstTouch = false;
             //telegate.SetActive(true);
             gameObject.SetActive(false);
+            player.GetComponent<PlayerController>().ToggleMove();
             Destroy(gameObject);
         }
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
         isTouch = true;
+        player.GetComponent<PlayerController>().ToggleMove();
     }
 
     private void OnTriggerExit2D(Collider2D collision)
