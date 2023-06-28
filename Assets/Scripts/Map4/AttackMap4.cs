@@ -34,4 +34,19 @@ public class AttackMap4 : MonoBehaviour
             cloneHealth.HurtEnemy(damageToGive);
         }
     }
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Enemy") && player.isAttack1())
+        {
+            EnemyHealthManager enemyHealth;
+            enemyHealth = collision.GetComponent<EnemyHealthManager>();
+            enemyHealth.HurtEnemy(damageToGive);
+        }
+        if (collision.CompareTag("Clone") && player.isAttack1())
+        {
+            CloneHealthManager cloneHealth;
+            cloneHealth = collision.GetComponent<CloneHealthManager>();
+            cloneHealth.HurtEnemy(damageToGive);
+        }
+    }
 }

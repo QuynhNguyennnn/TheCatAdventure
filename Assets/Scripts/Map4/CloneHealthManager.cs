@@ -22,11 +22,6 @@ public class CloneHealthManager : MonoBehaviour
     void Start()
     {
         cController = GetComponent<CloneController>();
-        if (cController == null)
-        {
-            b_Controller = GetComponent<Boss>();
-            isE_Controller = false;
-        }
         enemySprite = GetComponent<SpriteRenderer>();
     }
 
@@ -82,16 +77,9 @@ public class CloneHealthManager : MonoBehaviour
         currentHealth -= damageToGive;
         if (currentHealth <= 0)
         {
-            if (isE_Controller)
-            {
-                cController.isDie();
-            }
-            else
-            {
                 Debug.Log("Boss was died");
                 cController.isDie();
                 necklaceMap4.SetActive(true);
-            }
             Destroy(gameObject);
         }
     }

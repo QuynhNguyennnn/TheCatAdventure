@@ -44,15 +44,36 @@ public class CloneController : MonoBehaviour
         myAnim.SetBool("isMoving", true);
         myAnim.SetFloat("moveX", target.position.x - transform.position.x);
         myAnim.SetFloat("moveY", target.position.y - transform.position.y);
+        if (target.position.x - transform.position.x > 0 && m_FacingRight == true)
+        {
+            Flip();
+        }
+        else if (target.position.x - transform.position.x < 0 && m_FacingRight == false)
+        {
+            Flip();
+        }
         transform.position = Vector3.MoveTowards(transform.position, target.transform.position, speed * Time.deltaTime);
     }
-
+    private void Flip()
+    {
+        // Switch the way the player is labelled as facing.
+        m_FacingRight = !m_FacingRight;
+        // Multiply the player's x local scale by -1.
+        Vector3 theScale = transform.localScale;
+        theScale.x *= -1;
+        transform.localScale = theScale;
+    }
     public void GoHome()
     {
         myAnim.SetBool("isMoving", true);
-        myAnim.SetFloat("moveX", homePosition.transform.position.x - transform.position.x);
-        myAnim.SetFloat("moveY", homePosition.transform.position.y - transform.position.y);
-
+        if (transform.position.x - homePosition.transform.position.x > 0 && m_FacingRight == false)
+        {
+            Flip();
+        }
+        else if (transform.position.x - homePosition.transform.position.x < 0 && m_FacingRight == true)
+        {
+            Flip();
+        }
         transform.position = Vector3.MoveTowards(transform.position, homePosition.transform.position, speed * Time.deltaTime);
 
         if (Vector3.Distance(transform.position, homePosition.transform.position) == 0)
