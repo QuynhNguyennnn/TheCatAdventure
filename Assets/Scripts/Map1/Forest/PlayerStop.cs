@@ -33,7 +33,7 @@ public class PlayerStop : MonoBehaviour
     {
         if (isZoom)
         {
-            ZoomCam(9);
+            ZoomCam(8);
         }
 
         if (isCamMove)
@@ -72,6 +72,7 @@ public class PlayerStop : MonoBehaviour
     
     void MoveCam()
     {
+        Debug.Log(DeadZone.transform.position);
         Camera.main.transform.position = Vector3.MoveTowards(Camera.main.transform.position, DeadZone.transform.position, 10 * Time.deltaTime);
         if (Vector3.Distance(Camera.main.transform.position, DeadZone.transform.position) == 0)
         {

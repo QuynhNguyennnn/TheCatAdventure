@@ -77,7 +77,7 @@ public class Boss : MonoBehaviour
         {
             Flip();
         }
-        transform.position = Vector3.MoveTowards(transform.position, homePosition.transform.position, speed * Time.deltaTime);
+        transform.position = Vector2.MoveTowards(transform.position, homePosition.transform.position, speed * Time.deltaTime);
 
         if (Vector2.Distance(transform.position, homePosition.transform.position) == 0)
         {
@@ -85,6 +85,7 @@ public class Boss : MonoBehaviour
             ToggleGoHome();
         }
 
+        Debug.Log(isGoHome);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
