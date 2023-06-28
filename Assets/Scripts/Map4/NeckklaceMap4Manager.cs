@@ -61,7 +61,6 @@ public class NeckklaceMap4Manager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(playerStoped1.transform.position.x - player.transform.position.x);
         if (isMove)
         {
             player.transform.position = Vector2.MoveTowards(player.transform.position, playerStoped1.transform.position, 5 * Time.deltaTime);

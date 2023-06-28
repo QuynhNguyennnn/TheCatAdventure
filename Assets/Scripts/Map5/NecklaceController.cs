@@ -10,7 +10,6 @@ public class NecklaceController : MonoBehaviour
     void Start()
     {
         isTouch = false;
-        gameObject.SetActive(false);
     }
 
     // Update is called once per frame
@@ -24,13 +23,13 @@ public class NecklaceController : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             isTouch=true;
-            gameObject.SetActive(true);
+            gameObject.SetActive(false);
+            Debug.Log("mnmn");
         }
     }
-    private void OnTriggerExit2D(Collider2D collision)
+
+    public bool IsTouch()
     {
-        gameObject.SetActive(false);
+        return isTouch;
     }
-
-
 }

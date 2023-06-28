@@ -24778,6 +24778,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4362449416593866729, guid: 9a08c72a02d05a24b80391299fb8d684,
+        type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4362449416593866731, guid: 9a08c72a02d05a24b80391299fb8d684,
         type: 3}
       propertyPath: m_Name

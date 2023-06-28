@@ -164,8 +164,7 @@ public class TeleMap3ToMap4 : MonoBehaviour
 
         if (Vector2.Distance(cat.transform.position, cat.GetComponent<CatMoveForest>().GetPos(1).position) == 0)
         {
-            cat.GetComponent<Renderer>().sortingOrder = -1;
-
+            cat.SetActive(false);
         }
 
         if (countDo == 2 && count == 2 && isStart)

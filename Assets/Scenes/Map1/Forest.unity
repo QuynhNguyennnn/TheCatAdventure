@@ -9537,6 +9537,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4362449416593866729, guid: 9a08c72a02d05a24b80391299fb8d684,
+        type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4362449416593866731, guid: 9a08c72a02d05a24b80391299fb8d684,
         type: 3}
       propertyPath: m_Name
@@ -20455,6 +20460,7 @@ MonoBehaviour:
   player: {fileID: 2064285220}
   teleToMap2: {fileID: 680966354}
   cat: {fileID: 1184750956}
+  zoomSize: 8
 --- !u!61 &1863925865
 BoxCollider2D:
   m_ObjectHideFlags: 0

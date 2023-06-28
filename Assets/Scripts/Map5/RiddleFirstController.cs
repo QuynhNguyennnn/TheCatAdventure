@@ -14,11 +14,9 @@ public class RiddleFirstController : MonoBehaviour
     private int damageToGive = 2;
     private bool isCorrect = false;
     [SerializeField]
-    private GameObject guildNoti;
-    [SerializeField]
     private GameObject riddleSecond;
     [SerializeField]
-    private GameObject riddleThird;
+    private GameObject player;
 
 
     void Start()
@@ -37,14 +35,11 @@ public class RiddleFirstController : MonoBehaviour
         /*        riddleFirst[2] = "A. He was a cheetah\n" +
                     "B. He was a lion\n" +
                     "C. He was a cougar\n" + "D. He was a tiger";*/
-        guildNoti.SetActive(false);
-        riddleSecond.SetActive(false);
-        riddleThird.SetActive(false);
     }
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space) && count < 1)
         {
             count++;
             if (count == riddleFirst.Length)
@@ -53,18 +48,21 @@ public class RiddleFirstController : MonoBehaviour
                 isTouch = false;
             }
         }
-        if (!isCorrect) // countTurn < maxTurn
+      
+        if (isTouch)
         {
-            UIManager.ShowGuild(riddleFirst[1]);
             GetAnwser();
         }
+
         if (isTouch && !isCorrect)
         {
             UIManager.ShowGuild(riddleFirst[count]);
         }
-        else
+        else if(isTouch && isCorrect)
         {
             UIManager.OffGuild();
+            riddleSecond.SetActive(true);
+            gameObject.SetActive(false);
         }
     }
 
@@ -74,6 +72,7 @@ public class RiddleFirstController : MonoBehaviour
         {
             isCorrect = true;
             healthManager.currentHealth += 5;
+            player.GetComponent<PlayerController>().ToggleMove();
             if (healthManager.currentHealth > 50)
             {
                 healthManager.currentHealth = 50;
@@ -103,10 +102,13 @@ public class RiddleFirstController : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        isTouch = true;
-        gameObject.SetActive(true);
-        Debug.Log("cham riddle");
-
+        if (collision.CompareTag("Player"))
+        {
+            isTouch = true;
+            gameObject.SetActive(true);
+            Debug.Log("cham riddle");
+            player.GetComponent<PlayerController>().ToggleMove();
+        }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
@@ -118,7 +120,6 @@ public class RiddleFirstController : MonoBehaviour
                 isTouch = false;
                 UIManager.OffGuild();
                 //gameObject.SetActive(false);
-                riddleSecond.SetActive(true);
             }
             else
             {

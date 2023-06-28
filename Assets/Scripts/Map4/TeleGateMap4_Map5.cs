@@ -32,11 +32,11 @@ public class TeleGateMap4_Map5 : MonoBehaviour
                 Debug.Log(teleCloseCounter);
                 if (teleCloseCounter <= 0)
                 {
-                    PlayerPrefs.SetFloat("PlayerPositionX", -54.96f);
-                    PlayerPrefs.SetFloat("PlayerPositionY", -103.58f);
+                    PlayerPrefs.SetFloat("PlayerPositionX", -111.16f);
+                    PlayerPrefs.SetFloat("PlayerPositionY", -4.93f);
                     PlayerPrefs.SetFloat("PlayerPositionZ", 0);
 
-                    SceneManager.LoadScene("Map4");
+                    SceneManager.LoadScene("Map5");
                 }
             }
         }

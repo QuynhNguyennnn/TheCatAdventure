@@ -11,17 +11,11 @@ public class GuildNotiController : MonoBehaviour
     [SerializeField]
     private GameObject riddleFirst;
     [SerializeField]
-    private GameObject riddleSecond;
-    [SerializeField]
-    private GameObject riddleThird;
-    private GameObject attackZone;
+    private GameObject player;
 
     void Start()
     {
         manager = FindObjectOfType<UIManager>();
-        riddleFirst.SetActive(false); 
-        riddleSecond.SetActive(false);
-        riddleThird.SetActive(false);
         welcome = new string[2];
         welcome[0] = "Go to the goddess statue to solve the puzzle and find the final piece!";
         welcome[1] = "Got it!";
@@ -37,6 +31,9 @@ public class GuildNotiController : MonoBehaviour
             {
                 count = 0;
                 isTouch = false;
+                player.GetComponent<PlayerController>().ToggleMove();
+                riddleFirst.SetActive(true);
+                gameObject.SetActive(false);
             }
         }
 
@@ -52,6 +49,7 @@ public class GuildNotiController : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        player.GetComponent<PlayerController>().ToggleMove();
         isTouch = true;
     }
 
@@ -62,7 +60,6 @@ public class GuildNotiController : MonoBehaviour
             manager.OffGuild();
             Debug.Log("out");
             gameObject.SetActive(false);
-            riddleFirst.SetActive(true) ;
         }
     }
 }

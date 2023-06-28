@@ -35,8 +35,8 @@ public class CatCollar : MonoBehaviour
     bool isCatFirst = true;
 
     bool isMove = false;
-
-    float zoomSize = 9;
+    [SerializeField]
+    private float zoomSize;
     float zoomSpeed = 1f;
     bool isZoom = false;
     bool isCamMove = false;

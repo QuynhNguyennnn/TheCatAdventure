@@ -11,7 +11,7 @@ public class MenuStart : MonoBehaviour
         PlayerPrefs.SetFloat("PlayerPositionY", 1.6f);
         PlayerPrefs.SetFloat("PlayerPositionZ", 0);
 
-        SceneManager.LoadSceneAsync(1);
+        SceneManager.LoadScene("InsideHouse1");
     }
 
     public void QuitGame()

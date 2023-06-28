@@ -33,6 +33,8 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Debug.Log(isMove);
+
 
         if (isMove)
         {
@@ -102,6 +104,8 @@ public class PlayerController : MonoBehaviour
     public void ToggleMove()
     {
         isMove = !isMove;
+
+        Debug.Log("abc"+ isMove);
 
         myRB.velocity = new Vector2(0,0).normalized * speed * Time.deltaTime;
         // normalized make same speed when push all of above
