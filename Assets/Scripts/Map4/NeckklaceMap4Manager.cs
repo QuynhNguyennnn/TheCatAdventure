@@ -159,6 +159,11 @@ public class NeckklaceMap4Manager : MonoBehaviour
         }
     }
 
+    public bool Change()
+    {
+        return isCamMove;
+    }
+
     void ZoomCam(float target)
     {
         zoomSize -= zoomSpeed * Time.deltaTime;

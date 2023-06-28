@@ -41,6 +41,11 @@ public class NecklaceManagement : MonoBehaviour
         }
     }
 
+    public bool Change()
+    {
+        return isZoom;
+    }
+
     void ZoomCam(float target)
     {
         zoomSize -= zoomSpeed * Time.deltaTime;

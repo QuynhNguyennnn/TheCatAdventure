@@ -49,4 +49,9 @@ public class BossZone : MonoBehaviour
             controller.ToggleMove();
         }
     }
+
+    public bool Change()
+    {
+        return isMove;
+    }
 }

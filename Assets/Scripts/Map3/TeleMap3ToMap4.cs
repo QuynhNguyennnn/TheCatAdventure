@@ -193,6 +193,11 @@ public class TeleMap3ToMap4 : MonoBehaviour
         }
     }
 
+    public bool Change()
+    {
+        return isZoom;
+    }
+
     void ZoomCam(float target)
     {
         zoomSize -= zoomSpeed * Time.deltaTime;

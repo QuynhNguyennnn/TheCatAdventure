@@ -1166,7 +1166,7 @@ Tilemap:
       - {fileID: 1184467529, guid: 7dab4565900039f48a04f5d4739ab5d0, type: 3}
       - {fileID: -105937923, guid: 7dab4565900039f48a04f5d4739ab5d0, type: 3}
       - {fileID: -1806974219, guid: 7dab4565900039f48a04f5d4739ab5d0, type: 3}
-      m_AnimationSpeed: 5
+      m_AnimationSpeed: 5.0000005
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   - first: {x: -3, y: 12, z: 0}
@@ -1254,7 +1254,7 @@ Tilemap:
       - {fileID: 1184467529, guid: 7dab4565900039f48a04f5d4739ab5d0, type: 3}
       - {fileID: -105937923, guid: 7dab4565900039f48a04f5d4739ab5d0, type: 3}
       - {fileID: -1806974219, guid: 7dab4565900039f48a04f5d4739ab5d0, type: 3}
-      m_AnimationSpeed: 5.0000005
+      m_AnimationSpeed: 5
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   - first: {x: -3, y: 16, z: 0}
@@ -3215,7 +3215,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 347495767}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 686231787e4f36947808015971cb537e, type: 3}
   m_Name: 
@@ -16543,6 +16543,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hasKey: 0
   speed: 7
+--- !u!114 &1313750230
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1313750225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 686231787e4f36947808015971cb537e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1942940042
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16554,6 +16566,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 3517142763471956463, guid: 4d0b796cfaf04c64e8f6af225dd737ea,
+        type: 3}
+      propertyPath: speed
+      value: 350
       objectReference: {fileID: 0}
     - target: {fileID: 5567465332260126392, guid: 4d0b796cfaf04c64e8f6af225dd737ea,
         type: 3}
