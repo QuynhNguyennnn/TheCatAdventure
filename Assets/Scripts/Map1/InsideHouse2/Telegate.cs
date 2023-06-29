@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Telegate : MonoBehaviour
 {
@@ -31,6 +32,12 @@ public class Telegate : MonoBehaviour
                 teleCloseCounter -= Time.deltaTime;
                 if (teleCloseCounter <= 0)
                 {
+                    PlayerPrefs.SetFloat("PlayerPositionX", -27.9f);
+                    PlayerPrefs.SetFloat("PlayerPositionY", 10.6f);
+                    PlayerPrefs.SetFloat("PlayerPositionZ", 0);
+
+                    SceneManager.LoadScene("Forest");
+
                     Destroy(gameObject);
                 }
             }

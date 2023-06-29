@@ -7,16 +7,12 @@ public class SkeletonBossController : MonoBehaviour
 {
     private Animator myAnim;
     private Transform target;
-    private Boolean m_FacingRight = false;
     public GameObject homePosition;
     PlayerController player;
+    bool isMove = false;
 
     [SerializeField]
     private float speed = 0f;
-    [SerializeField]
-    private float maxRange = 0;
-    [SerializeField]
-    private float minRange = 0;
     // Start is called before the first frame update
     void Start()
     {
@@ -28,13 +24,9 @@ public class SkeletonBossController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Vector3.Distance(target.position, transform.position) <= maxRange && Vector3.Distance(target.position, transform.position) >= minRange)
+        if (isMove)
         {
-            FollowPlayer();
-        }
-        else if (Vector3.Distance(target.position, transform.position) >= maxRange)
-        {
-            GoHome();
+           FollowPlayer();
         }
 
     }
@@ -44,19 +36,7 @@ public class SkeletonBossController : MonoBehaviour
         myAnim.SetBool("isMoving", true);
         myAnim.SetFloat("moveX", target.position.x - transform.position.x);
         myAnim.SetFloat("moveY", target.position.y - transform.position.y);
-        transform.position = Vector3.MoveTowards(transform.position, target.transform.position, speed * Time.deltaTime);
-    }
-
-    public void GoHome()
-    {
-        myAnim.SetBool("isMoving", true);
-        myAnim.SetFloat("moveX", homePosition.transform.position.x - transform.position.x);
-        myAnim.SetFloat("moveY", homePosition.transform.position.y - transform.position.y);
-
-        transform.position = Vector3.MoveTowards(transform.position, homePosition.transform.position, speed * Time.deltaTime);
-
-        if (Vector3.Distance(transform.position, homePosition.transform.position) == 0)
-            myAnim.SetBool("isMoving", false);
+        transform.position = Vector2.MoveTowards(transform.position, target.transform.position, speed * Time.deltaTime);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -76,5 +56,10 @@ public class SkeletonBossController : MonoBehaviour
     public void isDie()
     {
         Destroy(homePosition);
+    }
+
+    public void SetMove()
+    {
+        isMove = true;
     }
 }

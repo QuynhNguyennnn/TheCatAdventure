@@ -10,11 +10,15 @@ public class Boss : MonoBehaviour
     private Boolean m_FacingRight = false;
     public GameObject homePosition;
     PlayerController player;
+    [SerializeField]
+    private GameObject catCollar;
 
     [SerializeField]
     private float speed = 0f;
     bool isMove = false;
     bool isGoHome = false;
+
+    private 
     // Start is called before the first frame update
     void Start()
     {
@@ -73,7 +77,7 @@ public class Boss : MonoBehaviour
         {
             Flip();
         }
-        transform.position = Vector3.MoveTowards(transform.position, homePosition.transform.position, speed * Time.deltaTime);
+        transform.position = Vector2.MoveTowards(transform.position, homePosition.transform.position, speed * Time.deltaTime);
 
         if (Vector2.Distance(transform.position, homePosition.transform.position) == 0)
         {
@@ -81,6 +85,7 @@ public class Boss : MonoBehaviour
             ToggleGoHome();
         }
 
+        Debug.Log(isGoHome);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -105,5 +110,11 @@ public class Boss : MonoBehaviour
     public void ToggleMove()
     {
         isMove = !isMove;
+    }
+
+    public void DropCatCollar()
+    {
+        catCollar.SetActive(true);
+        catCollar.transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z);
     }
 }

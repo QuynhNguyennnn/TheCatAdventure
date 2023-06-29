@@ -33,6 +33,8 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Debug.Log(isMove);
+
 
         if (isMove)
         {
@@ -79,7 +81,7 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    private void Flip()
+    public void Flip()
     {
         // Switch the way the player is labelled as facing.
         m_FacingRight = !m_FacingRight;
@@ -94,7 +96,7 @@ public class PlayerController : MonoBehaviour
         return isAttacking1;
     }
 
-    public Boolean isFlip()
+    public bool isFlip()
     {
         return m_FacingRight;
     }
@@ -102,6 +104,9 @@ public class PlayerController : MonoBehaviour
     public void ToggleMove()
     {
         isMove = !isMove;
+
+        Debug.Log("abc"+ isMove);
+
         myRB.velocity = new Vector2(0,0).normalized * speed * Time.deltaTime;
         // normalized make same speed when push all of above
         myAnimator.SetFloat("moveX", myRB.velocity.x);

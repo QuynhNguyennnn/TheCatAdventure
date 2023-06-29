@@ -47,8 +47,6 @@ public class G_Telegate : MonoBehaviour
             count++;
         }
 
-        Debug.Log(w_d_Counter);
-
         if (count == 3 && firstTouch)
         {
             a_wizard.SetBool("isDisappear", true);

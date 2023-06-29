@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class RiddleFinalController : MonoBehaviour
@@ -15,24 +16,20 @@ public class RiddleFinalController : MonoBehaviour
     private int damageToGive = 2;
     public bool isCorrect = false;
     [SerializeField]
-    private GameObject guildNoti;
-    [SerializeField]
-    private GameObject ridderFirst;
-    [SerializeField]
-    private GameObject riddleSecond;
-    [SerializeField]
-    private GameObject Necklace;
-    [SerializeField]
     private GameObject Congratulation;
+    [SerializeField]
+    private GameObject player;
+    private PlayerController playerController;
+    Animator p_animator;
+
+    bool isMove = false;
     void Start()
     {
         UIManager = FindObjectOfType<UIManager>();
         healthManager = FindObjectOfType<HealthManager>();
         isTouch = false;
-        guildNoti.SetActive(false);
-        ridderFirst.SetActive(false);
-        riddleSecond.SetActive(false);
-        Congratulation.SetActive(false);
+        playerController = player.GetComponent<PlayerController>();
+        p_animator = player.GetComponent<Animator>();
         count = 0;
         countTurn = 0;
         riddleThird = new string[2];
@@ -43,7 +40,7 @@ public class RiddleFinalController : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space) && count < 1)
         {
             count++;
             if (count == riddleThird.Length)
@@ -52,18 +49,41 @@ public class RiddleFinalController : MonoBehaviour
                 isTouch = false;
             }
         }
-        if (!isCorrect) //countTurn < maxTurn && 
+
+        if (isTouch)
         {
-            UIManager.ShowGuild(riddleThird[count]);
             GetAnwser();
-        }
-        if (isTouch && !isCorrect)
-        {
             UIManager.ShowGuild(riddleThird[count]);
+
         }
-        else
+
+        if (isTouch && isCorrect)
         {
             UIManager.OffGuild();
+            Congratulation.SetActive(true);
+            isMove = true;
+        }
+
+        if (isMove)
+        {
+            player.transform.position = Vector2.MoveTowards(player.transform.position, Congratulation.transform.position, 5 * Time.deltaTime);
+            p_animator.SetFloat("moveX", Congratulation.transform.position.x - player.transform.position.x);
+
+            p_animator.SetFloat("moveY", Congratulation.transform.position.y - player.transform.position.y);
+
+            if ((Congratulation.transform.position.x - player.transform.position.x) > 0 && playerController.isFlip() == true)
+            {
+                playerController.Flip();
+            }
+            else if ((Congratulation.transform.position.x - player.transform.position.x) < 0 && playerController.isFlip() == false)
+            {
+                playerController.Flip();
+            }
+        }
+
+        if(isMove && Vector2.Distance(player.transform.position, Congratulation.transform.position) == 0)
+        {
+            gameObject.SetActive(false);
         }
     }
 
@@ -104,28 +124,11 @@ public class RiddleFinalController : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        isTouch = true;
-        gameObject.SetActive(true);
-        Debug.Log("cham riddle 3");
-    }
-
-    private void OnTriggerExit2D(Collider2D collision)
-    {
         if (collision.CompareTag("Player"))
         {
-            if (isCorrect)
-            {
-                isTouch = false;
-                UIManager.OffGuild();
-                Necklace.SetActive(true);
-                Congratulation.SetActive(true);
-            } else
-            {
-                Update();
-            }
-            
-            //gameObject.SetActive(false);
+            isTouch = true;
+            player.GetComponent<PlayerController>().ToggleMove();
+            Debug.Log("cham riddle 3");
         }
-
     }
 }

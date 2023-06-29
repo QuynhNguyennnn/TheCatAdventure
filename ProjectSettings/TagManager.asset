@@ -11,6 +11,8 @@ TagManager:
   - GoIn2
   - GoOut2
   - SkeletonBoss
+  - NPC
+  - Clone
   layers:
   - Default
   - TransparentFX
