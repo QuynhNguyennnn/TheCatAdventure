@@ -61,8 +61,8 @@ public class LeafstepController_Map2 : MonoBehaviour
 
     private void Idle()
     {
-        myAnim.SetFloat("moveX", (target.position.x));
-        myAnim.SetFloat("moveY", (target.position.y));
+        myAnim.SetFloat("moveX", (transform.position.x));
+        myAnim.SetFloat("moveY", (transform.position.y));
 
     }
 
