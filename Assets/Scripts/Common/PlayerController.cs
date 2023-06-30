@@ -9,7 +9,11 @@ public class PlayerController : MonoBehaviour
     private Animator myAnimator;
     private Boolean m_FacingRight = false;
 
-    
+    [SerializeField]
+    private AudioSource audioPlayer;
+    [SerializeField]
+    private AudioClip attack1sound;
+
     public GameObject attack1;
     [SerializeField]
     private float speed = 0f;
@@ -63,8 +67,9 @@ public class PlayerController : MonoBehaviour
             }
         }
 
-        if(Input.GetKeyDown(KeyCode.T))
+        if(Input.GetKeyDown(KeyCode.T) && isAttacking1 == false)
         {
+            audioPlayer.PlayOneShot(attack1sound);
             appearCounter = appearTime;
             attackCounter = attackTime;
             myAnimator.SetBool("isAttacking1", true);

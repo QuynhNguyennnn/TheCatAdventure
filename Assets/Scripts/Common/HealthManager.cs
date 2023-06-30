@@ -9,6 +9,10 @@ public class HealthManager : MonoBehaviour
     public int maxHealth;
     private Animator myAnimator;
 
+    [SerializeField]
+    AudioSource audioPlayer;
+    [SerializeField]
+    public AudioClip hurt, death;
 
     private bool flashActive;
     [SerializeField]
@@ -92,6 +96,7 @@ public class HealthManager : MonoBehaviour
     {
         if (currentHealth > 0)
         {
+            audioPlayer.PlayOneShot(hurt);
             currentHealth -= damageToGive;
             flashActive = true;
             flashCounter = flashLenght;
@@ -99,13 +104,13 @@ public class HealthManager : MonoBehaviour
 
         if (currentHealth <= 0 && isDie == false)
         {
+            audioPlayer.PlayOneShot(death);
             Debug.Log("hihi");
             controller.ToggleMove();
             dieCounter = dieTime;
             myAnimator.SetBool("isDie", true);
             isDie = true;
             rb.isKinematic = true;
-
         }
     }
 }
