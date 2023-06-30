@@ -1308,7 +1308,7 @@ MonoBehaviour:
   background1: {fileID: 8300000, guid: b404567c41c8e5d4e9ddb2e40095b857, type: 3}
   background2: {fileID: 8300000, guid: b8cd445b10874aa4ba0ab0a67598d04c, type: 3}
   change1: {fileID: 1887917377}
-  change2: {fileID: 0}
+  change2: {fileID: 1272944168}
 --- !u!4 &599703563
 Transform:
   m_ObjectHideFlags: 0

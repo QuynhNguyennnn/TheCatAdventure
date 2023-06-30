@@ -19,6 +19,7 @@ public class AudioMangerMap2 : MonoBehaviour
 
     void Start()
     {
+        musicSource.loop = true;
         musicSource.clip = background1;
         musicSource.Play();
     }
