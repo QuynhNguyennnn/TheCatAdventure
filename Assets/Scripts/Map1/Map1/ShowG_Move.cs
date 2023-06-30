@@ -5,10 +5,25 @@ using UnityEngine;
 public class ShowG_Move : MonoBehaviour
 {
     UIManager manager;
+    string conver;
     // Start is called before the first frame update
     void Start()
     {
         manager = FindObjectOfType<UIManager>();
+
+
+        string type = PlayerPrefs.GetString("Type");
+        Debug.Log(type);
+
+        if (type.CompareTo("Map5_InsideHouse1") == 0)
+        {
+            conver = "A dream huh??";
+        } else
+        {
+            conver = "Use arrow keys or A, S, D, W to move!!!";
+        }
+
+        PlayerPrefs.SetString("Type", "");
     }
 
     // Update is called once per frame
@@ -22,7 +37,7 @@ public class ShowG_Move : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             Debug.Log("dacham");
-            manager.ShowGuild("Use arrow keys or A, S, D, W to move!!!");
+            manager.ShowGuild(conver);
         }  
     }
 

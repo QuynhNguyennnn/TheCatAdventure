@@ -34,6 +34,8 @@ public class TeleGateForest_Map2 : MonoBehaviour
                     PlayerPrefs.SetFloat("PlayerPositionY", 14.4f);
                     PlayerPrefs.SetFloat("PlayerPositionZ", 0);
 
+                    PlayerPrefs.SetFloat("Level", 2f);
+
                     SceneManager.LoadScene("Map2");
                 }
             }
