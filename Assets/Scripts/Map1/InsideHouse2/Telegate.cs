@@ -36,6 +36,8 @@ public class Telegate : MonoBehaviour
                     PlayerPrefs.SetFloat("PlayerPositionY", 10.6f);
                     PlayerPrefs.SetFloat("PlayerPositionZ", 0);
 
+                    PlayerPrefs.SetFloat("Level", 1.5f);
+
                     SceneManager.LoadScene("Forest");
 
                     Destroy(gameObject);

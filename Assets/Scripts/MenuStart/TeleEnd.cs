@@ -29,6 +29,11 @@ public class TeleEnd : MonoBehaviour
     private GameObject cat;
     CatMoveForest catMove;
 
+    [SerializeField]
+    private AudioSource audio;
+    [SerializeField]
+    private AudioClip congra;
+
 
     [SerializeField]
     private GameObject wizard;
@@ -50,12 +55,11 @@ public class TeleEnd : MonoBehaviour
     private float teleOpenCounter = 4 / 3f;
 
     private float teleCloseTime = 1f;
-    private float teleCloseCounter = 1f;
-    private bool teleClose = false;
-
     // Start is called before the first frame update
     void Start()
     {
+        audio.clip = congra;
+        audio.loop = true;
         uiManager = FindObjectOfType<UIManager>();
 
         catMove = cat.GetComponent<CatMoveForest>();
@@ -132,19 +136,19 @@ public class TeleEnd : MonoBehaviour
                 isShowG = true;
                 isWizardAppear = false;
                 t_animator.SetBool("IsClose", true);
-                teleClose = true;
-                teleCloseCounter = teleCloseTime;
                 isShowG = true;
+                audio.Play();
             }
         }
 
         if(isShowG)
-        {
+        {    
             uiManager.ShowGuild("CONGRATULATIONS YOU COMPLETE THE GAME. PRESS SPACE TO BACK TO STANDBY SCREEN.");
         }
         
         if(isShowG && Input.GetKeyDown(KeyCode.Space))
         {
+            audio.Stop();
             SceneManager.LoadScene("Menu");
         }
     }

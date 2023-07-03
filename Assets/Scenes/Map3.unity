@@ -1308,7 +1308,7 @@ MonoBehaviour:
   background1: {fileID: 8300000, guid: b404567c41c8e5d4e9ddb2e40095b857, type: 3}
   background2: {fileID: 8300000, guid: b8cd445b10874aa4ba0ab0a67598d04c, type: 3}
   change1: {fileID: 1887917377}
-  change2: {fileID: 0}
+  change2: {fileID: 1272944168}
 --- !u!4 &599703563
 Transform:
   m_ObjectHideFlags: 0
@@ -24251,7 +24251,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 807421039736753472, guid: 4d0b796cfaf04c64e8f6af225dd737ea, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 4d0b796cfaf04c64e8f6af225dd737ea, type: 3}
 --- !u!1 &1709237640 stripped
 GameObject:

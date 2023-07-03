@@ -36,6 +36,8 @@ public class TeleGateMap3_Map4 : MonoBehaviour
                     PlayerPrefs.SetFloat("PlayerPositionY", -103.58f);
                     PlayerPrefs.SetFloat("PlayerPositionZ", 0);
 
+                    PlayerPrefs.SetFloat("Level", 4);
+
                     SceneManager.LoadScene("Map4");
                 }
             }

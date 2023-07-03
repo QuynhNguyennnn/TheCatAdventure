@@ -85,7 +85,9 @@ public class CongratulationController : MonoBehaviour
             PlayerPrefs.SetFloat("PlayerPositionY", 1.6f);
             PlayerPrefs.SetFloat("PlayerPositionZ", 0);
 
-            //PlayerPrefs.SetString("Type", "Map5_InsideHouse2");
+            PlayerPrefs.SetString("Type", "Map5_InsideHouse1");
+
+            PlayerPrefs.SetInt("Level", 1);
 
             SceneManager.LoadScene("InsideHouse1");
         }
