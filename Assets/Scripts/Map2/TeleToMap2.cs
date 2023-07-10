@@ -64,7 +64,7 @@ public class TeleToMap2 : MonoBehaviour
         conversation[3] = "Player(interested): great! Where can I find that person?";
         conversation[4] = "Elric(blandly): go north towards the cover one by one you will find that person.";
         conversation[5] = "Elric: I go first!";
-        conversation[6] = "Meow! See you again hero!";
+        conversation[6] = "Summer: Meow! See you again hero!";
 
         catMove = cat.GetComponent<CatMoveForest>();
 

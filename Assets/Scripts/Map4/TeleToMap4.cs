@@ -63,7 +63,7 @@ public class TeleToMap4 : MonoBehaviour
         conversation = new string[5];
         conversation[0] = "Elric: Welcome to the Enchanted Forest. This is where your memories and past are kept. Let's fight and overcome them to move forward.";
         conversation[1] = "Elric: See you again hero!";
-        conversation[2] = "Summer the cat: I go first!";
+        conversation[2] = "Summer : I go first!";
 
         catMove = cat.GetComponent<CatMoveForest>();
 

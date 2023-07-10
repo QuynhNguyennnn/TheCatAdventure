@@ -55,7 +55,7 @@ public class TeleMap3ToMap4 : MonoBehaviour
     {
         conversation = new string[3];
         conversation[0] = "Elric: I will open the gate!";
-        conversation[1] = "Meow! (I go!)";
+        conversation[1] = "Summer: Meow! (I go!)";
         conversation[2] = "Elric: I go too!";
 
         p_animator = player.GetComponent<Animator>();
