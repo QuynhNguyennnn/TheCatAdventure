@@ -25,12 +25,12 @@ public class ShowG_FirstMeet : MonoBehaviour
         wController = FindObjectOfType<WizardController>();
         Debug.Log(catMove);
         conversation = new string[7];
-        conversation[0] = "Elric (joy): Welcome to the home of the Hero, you have come at the right time. Summer the cat and the power of the \"cat collar\" are waiting for us.";
-        conversation[1] = "Player (interested): Cat collar? I heard about it through legend. But no one knows where it is.";
-        conversation[2] = "Elric (contemplation): Yes, sir. The cat collar has been split into many small pieces and hidden in the mysterious forests throughout this magical world. However, one piece was found recently in the nearby forest.";
+        conversation[0] = "Elric (joy): Welcome to the home of the Hero, you have come at the right time. Summer the cat and the power of the \"cat necklace\" are waiting for us.";
+        conversation[1] = "Player (interested): Cat necklace? I heard about it through legend. But no one knows where it is.";
+        conversation[2] = "Elric (contemplation): Yes, sir. The Summer's necklace has been split into many small pieces and hidden in the mysterious forests throughout this magical world. However, one piece was found recently in the nearby forest.";
         conversation[3] = "Player (curious): So where are we going to start the journey?";
         conversation[4] = "Elric (nods): That's right. Summer the cat will be the one to guide us to that piece of rock. Get everything ready and let's start this adventurous adventure.";
-        conversation[5] = "Meow! Meow! (Welcome hero! Follow me!)";
+        conversation[5] = "Summer: Meow! Meow! (Welcome hero! Follow me!)";
     }
 
     // Update is called once per frame

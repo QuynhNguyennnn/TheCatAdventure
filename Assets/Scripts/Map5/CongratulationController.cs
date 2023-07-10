@@ -54,14 +54,14 @@ public class CongratulationController : MonoBehaviour
         isDone = false;
         UIManager = FindObjectOfType<UIManager>();
         finalChallenge = new string[6];
-        finalChallenge[0] = "Wizard (happy): Congratulation hero! You have passed all of challenges and found the Summer's necklace!\n";
-        finalChallenge[1] = "Wizard: Now, you have to choose between Summer cate and the last piece";
+        finalChallenge[0] = "Elric (happy): Congratulation hero! You have passed all of challenges and found the Summer's necklace!\n";
+        finalChallenge[1] = "Elric: Now, you have to choose between Summer cate and the last piece";
         finalChallenge[2] = "Player (nervous): What should I choose? My friend Summer or the piece?";
         finalChallenge[3] = "Summer: Choose the piece!";
-        finalChallenge[4] = "Wizard: What do you choose?\n" +
+        finalChallenge[4] = "Elric: What do you choose?\n" +
                             "(Press H for Summer and K for the piece)\n" +
                             "A. Summer cat\t B. The last piece";
-        finalChallenge[5] = "Wizard: Good choice hero, let's go back!";
+        finalChallenge[5] = "Elric: Good choice hero, let's go back!";
 
     }
 

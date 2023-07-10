@@ -35,7 +35,7 @@ public class G_Telegate : MonoBehaviour
         manager = FindObjectOfType<UIManager>();
         conversation = new string[3];
         conversation[0] = "Elric: Now I will open the portal.";
-        conversation[1] = "Meow! (I go first!)";
+        conversation[1] = "Summer: Meow! (I go first!)";
         conversation[2] = "Elric: I'm going too";
     }
 

@@ -36,11 +36,11 @@ public class TeleMap4ToMap5 : MonoBehaviour
     void Start()
     {
         conversation = new string[6];
-        conversation[0] = "Congratulations, hero! You have passed the enchanted forest!";
-        conversation[1] = "But don't forget, we still have to keep fighting to protect what's precious to us.";
-        conversation[2] = "Let's continue the journey together and face the next challenges.";
+        conversation[0] = "Elric: Congratulations, hero! You have passed the enchanted forest!";
+        conversation[1] = "Elric: But don't forget, we still have to keep fighting to protect what's precious to us.";
+        conversation[2] = "Elric: Let's continue the journey together and face the next challenges.";
         conversation[3] = "Elric: I will open the gate!";
-        conversation[4] = "Meow! (I go!)";
+        conversation[4] = "Summer: Meow! (I go!)";
         conversation[5] = "Elric: I go too!";
 
         isStart = true;

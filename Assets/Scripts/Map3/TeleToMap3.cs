@@ -66,10 +66,10 @@ public class TeleToMap3 : MonoBehaviour
         conversation = new string[6];
         conversation[0] = "Player (curious): Listen! I hear cries from afar. Let's find out what's happening.";
         conversation[1] = "Elric (heartbroken): These cats have no home. They need our help.";
-        conversation[2] = "Summer the cat (whispering): Meow... Meow... (We don't need a reason to help.)";
+        conversation[2] = "Summer (whispering): Meow... Meow... (We don't need a reason to help.)";
         conversation[3] = "Player (determined): You're right, Summer. There's no need for a reason to help others. Let's assist these cats and defeat the pursuing monster.";
         conversation[4] = "Elric: See you again hero!";
-        conversation[5] = "Summer the cat: I go first!";
+        conversation[5] = "Summer: I go first!";
 
         catMove = cat.GetComponent<CatMoveForest>();
 

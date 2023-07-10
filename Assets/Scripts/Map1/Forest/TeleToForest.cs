@@ -54,12 +54,15 @@ public class TeleToForest : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        isTele = true;
+        teleOpenCounter = teleOpenTime;
+
         uiManager = FindObjectOfType<UIManager>();
 
         conversation = new string[3];
         conversation[0] = "Elric: Hey hero, this is the forest of the last slimes. Follow these red flowers to your final destination.";
         conversation[1] = "Elric: I go first!";
-        conversation[2] = "Meow! See you again hero!";
+        conversation[2] = "Summer: Meow! See you again hero!";
 
         catMove = cat.GetComponent<CatMoveForest>();
 
@@ -189,11 +192,5 @@ public class TeleToForest : MonoBehaviour
             isShowG = false;
             count++;
         }
-    }
-
-    private void Awake()
-    {
-        isTele = true;
-        teleOpenCounter = teleOpenTime;
     }
 }
