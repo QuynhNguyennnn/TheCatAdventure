@@ -194,7 +194,7 @@ MonoBehaviour:
   audioPlayer: {fileID: 7406964361099072808}
   attack1sound: {fileID: 8300000, guid: 220c962b4936df248ab3c49a2c32ce54, type: 3}
   attack1: {fileID: 4291250116008636125}
-  speed: 500
+  speed: 1000
 --- !u!114 &432654495
 MonoBehaviour:
   m_ObjectHideFlags: 0

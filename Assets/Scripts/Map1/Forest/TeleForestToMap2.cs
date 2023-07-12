@@ -46,6 +46,7 @@ public class TeleForestToMap2 : MonoBehaviour
 
         w_animator = wizard.GetComponent<Animator>();
         t_animator = tele.GetComponent<Animator>();
+        Debug.Log(t_animator);
     }
 
     // Update is called once per frame
