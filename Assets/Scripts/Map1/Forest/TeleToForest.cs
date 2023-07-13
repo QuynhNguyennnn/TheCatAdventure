@@ -10,8 +10,6 @@ public class TeleToForest : MonoBehaviour
 
     UIManager uiManager;
 
-    [SerializeField]
-    private GameObject teleGate;
     Animator t_animator;
 
     [SerializeField]
@@ -56,31 +54,33 @@ public class TeleToForest : MonoBehaviour
     {
         isTele = true;
         teleOpenCounter = teleOpenTime;
-
         uiManager = FindObjectOfType<UIManager>();
 
+
+        t_animator = GetComponent<Animator>();
         conversation = new string[3];
         conversation[0] = "Elric: Hey hero, this is the forest of the last slimes. Follow these red flowers to your final destination.";
         conversation[1] = "Elric: I go first!";
         conversation[2] = "Summer: Meow! See you again hero!";
 
         catMove = cat.GetComponent<CatMoveForest>();
-
-        playerController = player.GetComponent<PlayerController>();
-        playerController.ToggleMove();
-
-        t_animator = teleGate.GetComponent<Animator>();
         p_animator = player.GetComponent<Animator>();
         w_animator = wizard.GetComponent<Animator>();
+        
+        playerController = player.GetComponent<PlayerController>();
+        playerController.ToggleMove();
     }
 
     // Update is called once per frame
     void Update()
     {
+
+
         if (isTele)
         {
-            teleGate.SetActive(true);
             teleOpenCounter -= Time.deltaTime;
+
+
             if (teleOpenCounter <= 0)
             {
                 t_animator.SetBool("IsIdle", true);
@@ -151,7 +151,7 @@ public class TeleToForest : MonoBehaviour
             if(teleCloseCounter <= 0)
             {
                 teleClose = false;
-                Destroy(teleGate);
+                gameObject.GetComponent<Renderer>().sortingOrder = -1;
             }
         }
 
@@ -168,12 +168,14 @@ public class TeleToForest : MonoBehaviour
 
         if (count == 1 && w_first)
         {
+            w_animator.SetBool("isIdle", false);
             w_animator.SetBool("isDisappear", true);
             w_d_Counter = w_d_Time;
             isWizardDisappear = true;
             w_first = false;
         }
 
+        Debug.Log(w_d_Counter);
         if (isWizardDisappear)
         {
             w_d_Counter -= Time.deltaTime;
@@ -192,5 +194,10 @@ public class TeleToForest : MonoBehaviour
             isShowG = false;
             count++;
         }
+    }
+
+    private void Awake()
+    {
+       
     }
 }

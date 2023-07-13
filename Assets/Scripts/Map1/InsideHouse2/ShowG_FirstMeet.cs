@@ -23,7 +23,6 @@ public class ShowG_FirstMeet : MonoBehaviour
         manager = FindObjectOfType<UIManager>();
         catMove = cat.GetComponent<CatMove>();
         wController = FindObjectOfType<WizardController>();
-        Debug.Log(catMove);
         conversation = new string[7];
         conversation[0] = "Elric (joy): Welcome to the home of the Hero, you have come at the right time. Summer the cat and the power of the \"cat necklace\" are waiting for us.";
         conversation[1] = "Player (interested): Cat necklace? I heard about it through legend. But no one knows where it is.";
