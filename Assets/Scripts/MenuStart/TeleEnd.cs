@@ -149,6 +149,7 @@ public class TeleEnd : MonoBehaviour
         if(isShowG && Input.GetKeyDown(KeyCode.Space))
         {
             audio.Stop();
+            PlayerPrefs.SetInt("Level", 0);
             SceneManager.LoadScene("Menu");
         }
     }

@@ -21,7 +21,7 @@ public class MenuStart : MonoBehaviour
             loadGame.SetActive(true);
             i = PlayerPrefs.GetFloat("Level");
         }
-        else if (PlayerPrefs.GetString("Level") == "")
+        else
         {
             newGame.SetActive(true);   
         }
