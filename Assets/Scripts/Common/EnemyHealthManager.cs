@@ -6,16 +6,24 @@ public class EnemyHealthManager : MonoBehaviour
 {
     public int currentHealth;
     public int maxHealth;
+    EnemyController e_Controller;
+    Boss b_Controller;
 
     private bool flashActive;
     [SerializeField]
     private float flashLenght = 0f;
     private float flashCounter = 0f;
+    bool isE_Controller = true;
 
     private SpriteRenderer enemySprite;
     // Start is called before the first frame update
     void Start()
     {
+        e_Controller = GetComponent<EnemyController>();
+        if (e_Controller == null ) {
+            b_Controller = GetComponent<Boss>();
+            isE_Controller = false;
+        }
         enemySprite = GetComponent<SpriteRenderer>();
     }
 
@@ -70,6 +78,15 @@ public class EnemyHealthManager : MonoBehaviour
 
         currentHealth -= damageToGive;
         if (currentHealth <= 0) {
+            if (isE_Controller)
+            {
+                e_Controller.isDie();
+            }
+            else
+            {
+                b_Controller.DropCatCollar();
+                b_Controller.isDie();
+            }
             Destroy(gameObject);
         }
     }

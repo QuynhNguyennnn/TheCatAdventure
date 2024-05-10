@@ -1,0 +1,1807 @@
+fileFormatVersion: 2
+guid: 4bb43b36371f89640b50d19d58359194
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 512
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: necklace-removebg-preview_0
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 293
+        width: 212
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e64f3905d43a91f4fb4210bb48be5af4
+      internalID: 533946916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: necklace-removebg-preview_1
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 245
+        width: 85
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e34372d9e119134b94728d082ad3e2a
+      internalID: 1739177494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: necklace-removebg-preview_2
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 290
+        width: 40
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0cb73d7e067df04ab7241d5c4621cc5
+      internalID: 451661276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: necklace-removebg-preview_3
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 256
+        width: 40
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d4a3bad4afbeb643bbe87a2b5fe84d9
+      internalID: -812638228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: necklace-removebg-preview_4
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 330
+        width: 39
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52a27d07feca1c34a84c1a8bd97977d8
+      internalID: -1967391471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: necklace-removebg-preview_5
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 328
+        width: 35
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89a58cdd37844d24baa3f5c05bea8f3d
+      internalID: -2113759583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: necklace-removebg-preview_6
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 327
+        width: 34
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7903f05e2f47844893a0f0751cbc92e
+      internalID: -195464347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: necklace-removebg-preview_7
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 334
+        width: 32
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04e4c36835143e94e993ebb68653385a
+      internalID: -491597763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: necklace-removebg-preview_8
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 324
+        width: 40
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d50400893e8258408b18671f897fb91
+      internalID: 424049008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: necklace-removebg-preview_9
+      rect:
+        serializedVersion: 2
+        x: 567
+        y: 324
+        width: 40
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c22d883c872bfa46808b7ec9adc7941
+      internalID: -593463355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: necklace-removebg-preview_10
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 207
+        width: 42
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a62b7999890b9e409b713bcfb860e35
+      internalID: -1373453498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: necklace-removebg-preview_11
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 249
+        width: 35
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18d5e0206864506458fda02f33d4da06
+      internalID: -1414359631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: necklace-removebg-preview_12
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 250
+        width: 40
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e06ce26de7660c42a26bd3dddaf5d20
+      internalID: 240934866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: necklace-removebg-preview_13
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 242
+        width: 34
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e53f66356880416489c5658772ce2b9e
+      internalID: 718376415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: necklace-removebg-preview_14
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 284
+        width: 37
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a47be261a1c9efa42b34aae58f30524b
+      internalID: 2022492474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: necklace-removebg-preview_15
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 282
+        width: 34
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 417ceeb47606f9c4399031f100a4b56e
+      internalID: 1722815236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: necklace-removebg-preview_16
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 291
+        width: 32
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f3dbf113c41af142aab29078146b560
+      internalID: -1198817933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: necklace-removebg-preview_17
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 282
+        width: 44
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d39a09c67dbe410479baec14de74b879
+      internalID: -1437355392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: necklace-removebg-preview_18
+      rect:
+        serializedVersion: 2
+        x: 569
+        y: 284
+        width: 33
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65c7e1c32c00d514ea44e949d5d24191
+      internalID: -856619769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: necklace-removebg-preview_19
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 254
+        width: 32
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9af9768e06d91a741a4a0e47eb8c66c5
+      internalID: -1953012946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: necklace-removebg-preview_20
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 246
+        width: 42
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c739ef9f491846f40a78d26cdaf7b9de
+      internalID: 2143119573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: necklace-removebg-preview_21
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 197
+        width: 45
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63ed983dde8d92149b8a1e71b2e86911
+      internalID: -837961571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: necklace-removebg-preview_22
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 239
+        width: 33
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afaa5eb066f261d4aaadf8993f814498
+      internalID: -1084988827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: necklace-removebg-preview_23
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 249
+        width: 32
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d87307f5711e40439900cc2e2fdee58
+      internalID: -439806411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: necklace-removebg-preview_24
+      rect:
+        serializedVersion: 2
+        x: 522
+        y: 239
+        width: 40
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0702300f5c352f469817fa1486a10d4
+      internalID: -311724726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: necklace-removebg-preview_25
+      rect:
+        serializedVersion: 2
+        x: 565
+        y: 242
+        width: 40
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e63e38cdcefce3419eff440ce2d01ab
+      internalID: 1725550811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: necklace-removebg-preview_26
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 219
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b2300eb6764d9441af69f7e6313f424
+      internalID: -1248250514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: necklace-removebg-preview_27
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 208
+        width: 33
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cc5a577dd196fa49b91cb9f5ab5e11a
+      internalID: 688250463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: necklace-removebg-preview_28
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 118
+        width: 88
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df5a14e8bed44d544aa51e5fb2861775
+      internalID: 1366654973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: necklace-removebg-preview_29
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 215
+        width: 37
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4767437b4a84c446b16526a173a3cdc
+      internalID: 1889480456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: necklace-removebg-preview_30
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 206
+        width: 29
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46178244df3ae724e9a6919a235d70e0
+      internalID: -85704195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: necklace-removebg-preview_31
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 115
+        width: 38
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0f582e9838ede248987d803d139ffad
+      internalID: 1717481258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: necklace-removebg-preview_32
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 156
+        width: 38
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74f12d7f36c98ff4983d2d5a96d24614
+      internalID: -1918702156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: necklace-removebg-preview_33
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 199
+        width: 39
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ade591d34d40f74faf136b92ed0449b
+      internalID: 1081618153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: necklace-removebg-preview_34
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 206
+        width: 31
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1492c6887bad6f741b40cd19fc7fba10
+      internalID: 2011643112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: necklace-removebg-preview_35
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 196
+        width: 38
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fe41b985ceb55e4c8ba7291edde02e9
+      internalID: 462268423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: necklace-removebg-preview_36
+      rect:
+        serializedVersion: 2
+        x: 564
+        y: 193
+        width: 38
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13e6084f77423fd4a80c1820511244f9
+      internalID: -1293099779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: necklace-removebg-preview_37
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 171
+        width: 40
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 721ce75bda91cce46a349b96825091fe
+      internalID: 1903605552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: necklace-removebg-preview_38
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 170
+        width: 34
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fd1b3062c8708848b651e305c89bfe7
+      internalID: -1541901598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: necklace-removebg-preview_39
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 78
+        width: 46
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0123b8817ec3944090e15d9acf6fd2d
+      internalID: -1916012286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: necklace-removebg-preview_40
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 117
+        width: 38
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4acebe10f7e17de4dba2247133776cb9
+      internalID: -638218023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: necklace-removebg-preview_41
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 116
+        width: 39
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be163f742f9c72b459e2ea029c923100
+      internalID: 1891884853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: necklace-removebg-preview_42
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 156
+        width: 40
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17f9bd2e6769e9e499f556d3c3ae1d31
+      internalID: 716500194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: necklace-removebg-preview_43
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 154
+        width: 36
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b98e3132cfb849d4a823cd2d1daa7f79
+      internalID: -1444081992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: necklace-removebg-preview_44
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 163
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b70dad18f562f3e4faf91d695ba3df3a
+      internalID: -263030858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: necklace-removebg-preview_45
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 154
+        width: 39
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26bb96ac506b3be40a553dbc13b066c4
+      internalID: 667854342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: necklace-removebg-preview_46
+      rect:
+        serializedVersion: 2
+        x: 563
+        y: 156
+        width: 39
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbd5db23d14a3284ca02c8b556e56333
+      internalID: 1066236248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: necklace-removebg-preview_47
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 127
+        width: 84
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8318900035b6d441890ac10e5610b92
+      internalID: 1015028561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: necklace-removebg-preview_48
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 124
+        width: 33
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ecfc52bb16c70f478979f5e884dcb65
+      internalID: 1973465261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: necklace-removebg-preview_49
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 72
+        width: 36
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcdbd22748f34c04c8d21ac2c1dbcd62
+      internalID: 1250179165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: necklace-removebg-preview_50
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 111
+        width: 34
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d559da21db89404890d0e68b1dbbc76
+      internalID: 48964334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: necklace-removebg-preview_51
+      rect:
+        serializedVersion: 2
+        x: 478
+        y: 118
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca38f81b5a3c6c149a7cb3ffd186350d
+      internalID: -1173087647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: necklace-removebg-preview_52
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 111
+        width: 40
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5dd9f6e3c2b947247aa06cf990332657
+      internalID: 1632627055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: necklace-removebg-preview_53
+      rect:
+        serializedVersion: 2
+        x: 562
+        y: 118
+        width: 39
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bb59f9907c52df4489cfac680c30032
+      internalID: -1574740967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: necklace-removebg-preview_54
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 80
+        width: 42
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0f2a7199e570b54894caaf2733cb37b
+      internalID: 252044642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: necklace-removebg-preview_55
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 42
+        width: 42
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44ccf7c232f68c74389cc13a5f777d63
+      internalID: 1432877501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: necklace-removebg-preview_56
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 83
+        width: 40
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a577a5c476848c448c38e025928ac4e
+      internalID: 874523457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: necklace-removebg-preview_57
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 78
+        width: 39
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ceaf99fb5e21ea94fb3e85d26aa793d4
+      internalID: 1770128276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: necklace-removebg-preview_58
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 77
+        width: 37
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4361ec7e6e6e55443ab30e9e39d0fb89
+      internalID: -1596064074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: necklace-removebg-preview_59
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 78
+        width: 34
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ee6d97e07c07eb4c879e9d72fa60b77
+      internalID: -1772097724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: necklace-removebg-preview_60
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 77
+        width: 31
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 003d67b55f6077946885f12dbe9de94d
+      internalID: -1748729504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: necklace-removebg-preview_61
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 73
+        width: 35
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfa3e592ebf48fa47968cade5de2f745
+      internalID: -2088744599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: necklace-removebg-preview_62
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 77
+        width: 35
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8165fd0c87f0a349ba0f9cf7fcf46d7
+      internalID: 1348561167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: necklace-removebg-preview_63
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 78
+        width: 32
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58fe178d6e55f4b42a7efd8f3a9148ac
+      internalID: -592142682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: necklace-removebg-preview_64
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 69
+        width: 39
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82f35b3301257ee4dae03435c6b2b1dd
+      internalID: 1361988221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: necklace-removebg-preview_65
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 42
+        width: 33
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ae1de3cbb28e924db0340945caf5743
+      internalID: -1481941978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: necklace-removebg-preview_66
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 41
+        width: 35
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d0f82a9e4237b048baaf1044f4e9030
+      internalID: -1713141135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: necklace-removebg-preview_67
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 39
+        width: 32
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 995994988491a2c4089f0dae3d72c4e6
+      internalID: 2134074310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: necklace-removebg-preview_68
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 38
+        width: 31
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37424a343e49ca341ad441983ac98db0
+      internalID: 793982690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: necklace-removebg-preview_69
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 37
+        width: 33
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f831e071af64324c8732097d955553c
+      internalID: -95200565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: necklace-removebg-preview_70
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 38
+        width: 28
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 764d4cf35bcc64d4c8ba96bd7ade387b
+      internalID: -255754923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: necklace-removebg-preview_71
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 32
+        width: 34
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56aad5a5de91d0a4592d27ec16b32162
+      internalID: -1014689708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: necklace-removebg-preview_72
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 31
+        width: 35
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7dfc89de13ddce64c9fc22391f777f20
+      internalID: -170712249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: necklace-removebg-preview_73
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 29
+        width: 33
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5fe71e47b5db7640aa9109da6dcedbd
+      internalID: 363039763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: necklace-removebg-preview_74
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 29
+        width: 36
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ab74662f6e786b48b42b25cd6243ea8
+      internalID: 1457223259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: necklace-removebg-preview_75
+      rect:
+        serializedVersion: 2
+        x: 476
+        y: 35
+        width: 32
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8b9dd1842523fa4bbafb07ab1f454ed
+      internalID: -1471092495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 71584e39f0cc21f4f980e3d89ac688d3
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      necklace-removebg-preview_0: 533946916
+      necklace-removebg-preview_1: 1739177494
+      necklace-removebg-preview_10: -1373453498
+      necklace-removebg-preview_11: -1414359631
+      necklace-removebg-preview_12: 240934866
+      necklace-removebg-preview_13: 718376415
+      necklace-removebg-preview_14: 2022492474
+      necklace-removebg-preview_15: 1722815236
+      necklace-removebg-preview_16: -1198817933
+      necklace-removebg-preview_17: -1437355392
+      necklace-removebg-preview_18: -856619769
+      necklace-removebg-preview_19: -1953012946
+      necklace-removebg-preview_2: 451661276
+      necklace-removebg-preview_20: 2143119573
+      necklace-removebg-preview_21: -837961571
+      necklace-removebg-preview_22: -1084988827
+      necklace-removebg-preview_23: -439806411
+      necklace-removebg-preview_24: -311724726
+      necklace-removebg-preview_25: 1725550811
+      necklace-removebg-preview_26: -1248250514
+      necklace-removebg-preview_27: 688250463
+      necklace-removebg-preview_28: 1366654973
+      necklace-removebg-preview_29: 1889480456
+      necklace-removebg-preview_3: -812638228
+      necklace-removebg-preview_30: -85704195
+      necklace-removebg-preview_31: 1717481258
+      necklace-removebg-preview_32: -1918702156
+      necklace-removebg-preview_33: 1081618153
+      necklace-removebg-preview_34: 2011643112
+      necklace-removebg-preview_35: 462268423
+      necklace-removebg-preview_36: -1293099779
+      necklace-removebg-preview_37: 1903605552
+      necklace-removebg-preview_38: -1541901598
+      necklace-removebg-preview_39: -1916012286
+      necklace-removebg-preview_4: -1967391471
+      necklace-removebg-preview_40: -638218023
+      necklace-removebg-preview_41: 1891884853
+      necklace-removebg-preview_42: 716500194
+      necklace-removebg-preview_43: -1444081992
+      necklace-removebg-preview_44: -263030858
+      necklace-removebg-preview_45: 667854342
+      necklace-removebg-preview_46: 1066236248
+      necklace-removebg-preview_47: 1015028561
+      necklace-removebg-preview_48: 1973465261
+      necklace-removebg-preview_49: 1250179165
+      necklace-removebg-preview_5: -2113759583
+      necklace-removebg-preview_50: 48964334
+      necklace-removebg-preview_51: -1173087647
+      necklace-removebg-preview_52: 1632627055
+      necklace-removebg-preview_53: -1574740967
+      necklace-removebg-preview_54: 252044642
+      necklace-removebg-preview_55: 1432877501
+      necklace-removebg-preview_56: 874523457
+      necklace-removebg-preview_57: 1770128276
+      necklace-removebg-preview_58: -1596064074
+      necklace-removebg-preview_59: -1772097724
+      necklace-removebg-preview_6: -195464347
+      necklace-removebg-preview_60: -1748729504
+      necklace-removebg-preview_61: -2088744599
+      necklace-removebg-preview_62: 1348561167
+      necklace-removebg-preview_63: -592142682
+      necklace-removebg-preview_64: 1361988221
+      necklace-removebg-preview_65: -1481941978
+      necklace-removebg-preview_66: -1713141135
+      necklace-removebg-preview_67: 2134074310
+      necklace-removebg-preview_68: 793982690
+      necklace-removebg-preview_69: -95200565
+      necklace-removebg-preview_7: -491597763
+      necklace-removebg-preview_70: -255754923
+      necklace-removebg-preview_71: -1014689708
+      necklace-removebg-preview_72: -170712249
+      necklace-removebg-preview_73: 363039763
+      necklace-removebg-preview_74: 1457223259
+      necklace-removebg-preview_75: -1471092495
+      necklace-removebg-preview_8: 424049008
+      necklace-removebg-preview_9: -593463355
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

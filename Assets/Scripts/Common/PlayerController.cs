@@ -10,11 +10,22 @@ public class PlayerController : MonoBehaviour
     private Boolean m_FacingRight = false;
 
     [SerializeField]
+    private AudioSource audioPlayer;
+    [SerializeField]
+    private AudioClip attack1sound;
+
+    public GameObject attack1;
+    [SerializeField]
     private float speed = 0f;
 
+    private float appearTime = 2 / 3f;
+    private float appearCounter = 2 / 3f;
+
     private float attackTime = 2/3f;
-    private float attackCounter = 2 / 3f;
+    private float attackCounter = 2/3f;
     private bool isAttacking1;
+
+    bool isMove = true;
 
     // Start is called before the first frame update
     void Start()
@@ -26,11 +37,16 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        myRB.velocity = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")).normalized * speed * Time.deltaTime;
-        // normalized make same speed when push all of above
-        myAnimator.SetFloat("moveX", myRB.velocity.x);
-        myAnimator.SetFloat("moveY", myRB.velocity.y);
+        Debug.Log(myRB);
 
+
+        if (isMove)
+        {
+            myRB.velocity = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")).normalized * speed * Time.deltaTime;
+            // normalized make same speed when push all of above
+            myAnimator.SetFloat("moveX", myRB.velocity.x);
+            myAnimator.SetFloat("moveY", myRB.velocity.y);
+        }
         if (isAttacking1)
         {
             attackCounter -= Time.deltaTime;
@@ -38,10 +54,23 @@ public class PlayerController : MonoBehaviour
                 myAnimator.SetBool("isAttacking1", false);
                 isAttacking1 = false;
             }
+
+            appearCounter -= Time.deltaTime;
+            if (appearCounter >= (2 / 3f - (2 / 3f)*(3 / 4f)) && appearCounter <= (2 / 3f - (2 / 3f) * (2/4f)))
+            {
+                attack1.SetActive(true);
+            }
+            else if (appearCounter <= 0)
+            {
+                isAttacking1 = false;
+                attack1.SetActive(false);
+            }
         }
 
-        if(Input.GetKeyDown(KeyCode.T))
+        if(Input.GetKeyDown(KeyCode.T) && isAttacking1 == false)
         {
+            audioPlayer.PlayOneShot(attack1sound);
+            appearCounter = appearTime;
             attackCounter = attackTime;
             myAnimator.SetBool("isAttacking1", true);
             isAttacking1 = true;
@@ -57,7 +86,7 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    private void Flip()
+    public void Flip()
     {
         // Switch the way the player is labelled as facing.
         m_FacingRight = !m_FacingRight;
@@ -72,17 +101,20 @@ public class PlayerController : MonoBehaviour
         return isAttacking1;
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.tag == "Enemy")
-        {
-            Vector2 difference = transform.position - collision.transform.position;
-            transform.position = new Vector2(transform.position.x + difference.x, transform.position.y + difference.y);
-        }
-    }
-
-    public Boolean isFlip()
+    public bool isFlip()
     {
         return m_FacingRight;
+    }
+
+    public void ToggleMove()
+    {
+        isMove = !isMove;
+        myRB = GetComponent<Rigidbody2D>();
+        myAnimator = GetComponent<Animator>();
+
+        myRB.velocity = new Vector2(0,0).normalized * speed * Time.deltaTime;
+        // normalized make same speed when push all of above
+        myAnimator.SetFloat("moveX", myRB.velocity.x);
+        myAnimator.SetFloat("moveY", myRB.velocity.y);
     }
 }

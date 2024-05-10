@@ -12,10 +12,10 @@ GameObject:
   - component: {fileID: 7981141517015762571}
   - component: {fileID: -3525388947546402768}
   - component: {fileID: -4386480338401163401}
-  - component: {fileID: -4387882215754873751}
   - component: {fileID: 4373018447978350265}
   - component: {fileID: 3123921708704024318}
   - component: {fileID: 1812250161}
+  - component: {fileID: 4955227755010228362}
   m_Layer: 0
   m_Name: Slime
   m_TagString: Enemy
@@ -78,7 +78,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 4
   m_Sprite: {fileID: 1242498508, guid: ad97510a8fa3a7745afbf3817377108c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -137,19 +137,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &-4387882215754873751
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3135760137762186698}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1d05efdbf4ee5bc40821ed57d4478536, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damageToGive: 10
 --- !u!114 &4373018447978350265
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -202,3 +189,16 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &4955227755010228362
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3135760137762186698}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d05efdbf4ee5bc40821ed57d4478536, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damageToGive: 2

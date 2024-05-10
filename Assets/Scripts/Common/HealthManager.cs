@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class HealthManager : MonoBehaviour
 {
@@ -8,6 +9,10 @@ public class HealthManager : MonoBehaviour
     public int maxHealth;
     private Animator myAnimator;
 
+    [SerializeField]
+    AudioSource audioPlayer;
+    [SerializeField]
+    public AudioClip hurt, death;
 
     private bool flashActive;
     [SerializeField]
@@ -17,6 +22,9 @@ public class HealthManager : MonoBehaviour
     private float dieTime = 3f;
     private float dieCounter = 3f;
     private bool isDie;
+    PlayerController controller;
+    Rigidbody2D rb;
+
 
     private SpriteRenderer playerSprite;
 
@@ -25,6 +33,8 @@ public class HealthManager : MonoBehaviour
     {
         playerSprite = GetComponent<SpriteRenderer>();
         myAnimator = GetComponent<Animator>();
+        controller = GetComponent<PlayerController>();
+        rb = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
@@ -33,12 +43,14 @@ public class HealthManager : MonoBehaviour
         if (isDie)
         {
             dieCounter -= Time.deltaTime;
+            Debug.Log("hoho");
             if (dieCounter <= 0)
             {
+                Debug.Log("haha");
                 myAnimator.SetBool("isDie", false);
                 gameObject.SetActive(false);
-                Debug.Log(isDie);
                 isDie = false;
+                SceneManager.LoadScene(SceneManager.GetActiveScene().name);
             }
         }
 
@@ -84,6 +96,7 @@ public class HealthManager : MonoBehaviour
     {
         if (currentHealth > 0)
         {
+            audioPlayer.PlayOneShot(hurt);
             currentHealth -= damageToGive;
             flashActive = true;
             flashCounter = flashLenght;
@@ -91,9 +104,13 @@ public class HealthManager : MonoBehaviour
 
         if (currentHealth <= 0 && isDie == false)
         {
+            audioPlayer.PlayOneShot(death);
+            Debug.Log("hihi");
+            controller.ToggleMove();
             dieCounter = dieTime;
             myAnimator.SetBool("isDie", true);
             isDie = true;
+            rb.isKinematic = true;
         }
     }
 }

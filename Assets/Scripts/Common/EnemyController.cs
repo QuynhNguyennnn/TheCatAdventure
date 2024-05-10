@@ -1,6 +1,4 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class EnemyController : MonoBehaviour
@@ -8,8 +6,10 @@ public class EnemyController : MonoBehaviour
     private Animator myAnim;
     private Transform target;
     private Boolean m_FacingRight = false;
-    public Transform homePosition;
+    public GameObject homePosition;
     PlayerController player;
+
+    bool isMove = true;
 
     [SerializeField]
     private float speed = 0f;
@@ -18,6 +18,7 @@ public class EnemyController : MonoBehaviour
     [SerializeField]
     private float minRange = 0;
     // Start is called before the first frame update
+
     void Start()
     {
         player = FindObjectOfType<PlayerController>();
@@ -28,30 +29,32 @@ public class EnemyController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Vector3.Distance(target.position, transform.position) <= maxRange && Vector3.Distance(target.position, transform.position) >= minRange)
+        if (isMove)
         {
-            FollowPlayer();
+            if (Vector3.Distance(target.position, transform.position) <= maxRange && Vector3.Distance(target.position, transform.position) >= minRange)
+            {
+                FollowPlayer();
+            }
+            else if (Vector3.Distance(target.position, transform.position) >= maxRange)
+            {
+                GoHome();
+            }
         }
-        else if (Vector3.Distance(target.position, transform.position) >= maxRange)
-        {
-            GoHome();
-        }
-        
     }
 
     public void FollowPlayer()
     {
         myAnim.SetBool("isMoving", true);
-        myAnim.SetFloat("moveX", (target.position.x - transform.position.x));
-        myAnim.SetFloat("moveY", (target.position.y - transform.position.y));
-
-        if(target.position.x - transform.position.x > 0 && m_FacingRight == true)
+        myAnim.SetFloat("moveX", target.position.x - transform.position.x);
+        myAnim.SetFloat("moveY", target.position.y - transform.position.y);
+        if (target.position.x - transform.position.x > 0 && m_FacingRight == true)
         {
             Flip();
-        } else if (target.position.x - transform.position.x < 0 && m_FacingRight == false)
-        { 
-            Flip(); 
-        } 
+        }
+        else if (target.position.x - transform.position.x < 0 && m_FacingRight == false)
+        {
+            Flip();
+        }
         transform.position = Vector3.MoveTowards(transform.position, target.transform.position, speed * Time.deltaTime);
     }
 
@@ -67,29 +70,42 @@ public class EnemyController : MonoBehaviour
 
     public void GoHome()
     {
-        myAnim.SetFloat("moveX", (target.position.x - transform.position.x));
-        myAnim.SetFloat("moveY", (target.position.y - transform.position.y));
-
-        if (transform.position.x - homePosition.position.x > 0 && m_FacingRight == false)
+        myAnim.SetBool("isMoving", true);
+        if (transform.position.x - homePosition.transform.position.x > 0 && m_FacingRight == false)
         {
             Flip();
         }
-        else if (transform.position.x - homePosition.position.x < 0 && m_FacingRight == true)
+        else if (transform.position.x - homePosition.transform.position.x < 0 && m_FacingRight == true)
         {
             Flip();
         }
-        transform.position = Vector3.MoveTowards(transform.position, homePosition.position, speed * Time.deltaTime);
+        transform.position = Vector3.MoveTowards(transform.position, homePosition.transform.position, speed * Time.deltaTime);
 
-        if (Vector3.Distance(transform.position, homePosition.position) == 0)
+        if (Vector3.Distance(transform.position, homePosition.transform.position) == 0)
             myAnim.SetBool("isMoving", false);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.tag == "AttackRange" && player.isAttack1())
+        if (collision.tag == "AttackRange" && player.isAttack1())
         {
             Vector2 difference = transform.position - collision.transform.position;
             transform.position = new Vector2(transform.position.x + difference.x, transform.position.y + difference.y);
         }
+    }
+
+    public void SetHomePosition(GameObject HomePosition)
+    {
+        homePosition = HomePosition;
+    }
+
+    public void isDie()
+    {
+        Destroy(homePosition);
+    }
+
+    public void ToggleMove()
+    {
+        isMove = !isMove;
     }
 }
